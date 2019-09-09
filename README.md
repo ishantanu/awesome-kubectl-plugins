@@ -31,7 +31,7 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 
 ## kubectl Plugins
 * [kubectx](https://github.com/ahmetb/kubectx)
-* [kuebctl-debug](https://github.com/aylei/kubectl-debug)
+* [kubectl-debug](https://github.com/aylei/kubectl-debug)
 * [kubectl-trace](https://github.com/iovisor/kubectl-trace)
 * [ksniff](https://github.com/eldadru/ksniff)
 * [rakkess](https://github.com/corneliusweig/rakkess)
@@ -39,7 +39,7 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 * [collection of kubectl plugins](https://github.com/jordanwilson230/kubectl-plugins)
 * [kubectl-warp](https://github.com/ernoaapa/kubectl-warp)
 * [kubelogin](https://github.com/int128/kubelogin)
-* [kuebctl-extras mini plugins](https://github.com/ahmetb/kubectl-extras)
+* [kubectl-extras mini plugins](https://github.com/ahmetb/kubectl-extras)
 * [kubectl-sudo](https://github.com/postfinance/kubectl-sudo)
 * [kubectl-cssh](https://github.com/containership/kubectl-cssh)
 * [ketall](https://github.com/corneliusweig/ketall)
@@ -74,7 +74,7 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 * [kubepod](https://github.com/karancode/kubepod)
 * [kubectl-all](https://github.com/kajanth/kubectl-all)
 * [kubectl-swiftnp](https://github.com/bmuschko/kubectl-swiftnp)
-* [kuebctl-plugin-pvc](https://github.com/fabiand/kubectl-plugin-pvc)
+* [kubectl-plugin-pvc](https://github.com/fabiand/kubectl-plugin-pvc)
 * [kubectl-pass](https://github.com/rafi/kubectl-pass)
 * [kubectl-clogs](https://github.com/ivkalita/kubectl-clogs)
 * [caas-one kubectl-switch](https://github.com/caas-one/kubectl-switch)
