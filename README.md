@@ -11,10 +11,9 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 # Contents
 
 * [Package Manager](#package-manager)
-* [kubectl Plugins](#kubectl-plugins)
-* [Getting started](#getting-started)
-* [Blog Posts](#blog-posts)
 * [Resources](#resources)
+* [Blog Posts](#blog-posts)
+* [kubectl Plugins](#kubectl-plugins)
 
 ## Package Manager 📦
  * [Krew](https://github.com/kubernetes-sigs/krew)
