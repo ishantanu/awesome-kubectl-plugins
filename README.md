@@ -17,12 +17,12 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 
 ## Package Manager 📦
  * [Krew](https://github.com/kubernetes-sigs/krew)
- 
+
 ## Resources
 * [Writing Kubectl Plugins for Everyone](https://www.youtube.com/watch?v=83ITOTsXsHU)
 * [Podcast - kubectl Plugins and krew, with Ahmet Alp Balkan and Luk Burchard](https://kubernetespodcast.com/episode/066-kubectl-plugins-and-krew/)
 
-### Blog Posts
+## Blog Posts
 
 * [Extending kubectl with plugins](https://kubernetes.io/docs/tasks/extend-kubectl/kubectl-plugins/)
 * [Write your own kubectl subcommands](https://ahmet.im/blog/kubectl-plugins/)
@@ -42,13 +42,10 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 
 * [kubectl-dig](https://github.com/sysdiglabs/kubectl-dig) - Deep kubernetes visibility from the kubectl
 
-* [collection of kubectl plugins](https://github.com/jordanwilson230/kubectl-plugins) - A Collection of Plugins for kubectl Integration (context switching, ssh / exec as any user, etc).
 
 * [kubectl-warp](https://github.com/ernoaapa/kubectl-warp) - Kubernetes CLI plugin for syncing and executing local files in Pod on Kubernetes
 
 * [kubelogin](https://github.com/int128/kubelogin) - kubectl plugin for Kubernetes OpenID Connect authentication (kubectl oidc-login)
-
-* [kubectl-extras mini plugins](https://github.com/ahmetb/kubectl-extras) - A collection of mini plugins for kubectl.
 
 * [kubectl-sudo](https://github.com/postfinance/kubectl-sudo) - Run kubernetes commands with the security privileges of another user
 
@@ -128,8 +125,6 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 
 * [kubectl-custom-cols](https://github.com/webofmars/kubectl-custom-cols) - a kubectl plugin that help you customize output columns like a boss !
 
-* [collection - kubectl plugins](https://github.com/thecloudnatives/kubectl-plugins) - A list of plugins that enhance the kubectl CLI
-
 * [kubectl-texec](https://github.com/TrsNium/kubectl-texec) - Attach to the pod matching the label with Tmux
 
 * [duyguserbest kubectl-iexec](https://github.com/duyguserbest/kubectl-iexec) - kubectl plugin to simplify interactive exec command.
@@ -154,16 +149,11 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 
 * [kubectl-exec-all](https://github.com/jpdasma/kubectl-exec-all) - kubectl plugin to execute a command in all running pods of a resource (daemonset, deployment, statefulset, etc)
 
-* [collection - kubectl plugins](https://github.com/thobiast/kubectl-plugins) - It is a set of kubectl plugins.
-
 * [kubectl-select-context](https://github.com/stefanm8/kubectl-select-context) - light kubectl plugin that prompts user to select config context
-
-* [collection - kubectl plugins](https://github.com/ripta/kubectl-plugins) - These be collection of kubectl plugins!
 
 * [kubectl-gitlab-bootstrap](https://github.com/eddiezane/kubectl-gitlab_bootstrap) - Quickly add a Kubernetes cluster to a GitLab project
 
 * [kubectl-ssm-secret](https://github.com/pr8kerl/kubectl-ssm-secret) - A kubectl plugin to allow import/export of kubernetes secrets to/from AWS SSM Parameter Store path.
-
 
 * [kubectl-dfi](https://github.com/makocchi-git/kubectl-dfi) - List and show disk resources of images on Kubernetes nodes.
 
@@ -181,3 +171,14 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 
 * [kubectl-captain](https://github.com/alauda/kubectl-captain) - kubectl plugin for captain
 
+### Collection of kubectl plugins
+
+* [collection of kubectl plugins](https://github.com/jordanwilson230/kubectl-plugins) - A Collection of Plugins for kubectl Integration (context switching, ssh / exec as any user, etc).
+
+* [kubectl-extras mini plugins](https://github.com/ahmetb/kubectl-extras) - A collection of mini plugins for kubectl.
+
+* [collection - kubectl plugins](https://github.com/thecloudnatives/kubectl-plugins) - A list of plugins that enhance the kubectl CLI
+
+* [collection - kubectl plugins](https://github.com/thobiast/kubectl-plugins) - It is a set of kubectl plugins.
+ 
+* [collection - kubectl plugins](https://github.com/ripta/kubectl-plugins) - These be collection of kubectl plugins!
