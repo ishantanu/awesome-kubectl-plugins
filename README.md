@@ -73,7 +73,7 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 
 * [kubectl-enter](https://github.com/kvaps/kubectl-enter) - Exec into node via kubectl
 
-* [ksort](https://github.com/superbrothers/ksort) - Sort manfest files in a proper order by Kind
+* [ksort](https://github.com/superbrothers/ksort) - Sort manifest files in a proper order by Kind
 
 * [kubectl-ns](https://github.com/postfinance/kubectl-ns) - Simple kubectl plugin to display/switch namespaces
 
