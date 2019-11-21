@@ -42,6 +42,7 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 
 * [kubectl-dig](https://github.com/sysdiglabs/kubectl-dig) - Deep kubernetes visibility from the kubectl
 
+* [kubectl-doctor](https://github.com/emirozer/kubectl-doctor) - k8s cluster triage plugin - scan your cluster for anomalies (brew doctor equivalent)
 
 * [kubectl-warp](https://github.com/ernoaapa/kubectl-warp) - Kubernetes CLI plugin for syncing and executing local files in Pod on Kubernetes
 
