@@ -172,6 +172,8 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 
 * [kubectl-captain](https://github.com/alauda/kubectl-captain) - kubectl plugin for captain
 
+* [kubectl-unbound-pvc](https://github.com/ishantanu/kubectl-unbound-pvc) - A kubectl plugint to see PVCs which are not in "Bound" state
+
 ### Collection of kubectl plugins
 
 * [collection of kubectl plugins](https://github.com/jordanwilson230/kubectl-plugins) - A Collection of Plugins for kubectl Integration (context switching, ssh / exec as any user, etc).
