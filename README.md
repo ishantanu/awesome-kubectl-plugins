@@ -30,188 +30,102 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 * [Boosting Your Kubectl Productivity](https://learnk8s.io/blog/kubectl-productivity/)
 
 ## kubectl Plugins
-* [kubectx](https://github.com/ahmetb/kubectx) - Switch faster between clusters and namespaces in kubectl https://kubectx.dev
 
-* [kubectl-debug](https://github.com/aylei/kubectl-debug) - Debug your pod by a new container with every troubleshooting tools pre-installed
-
-* [kubectl-trace](https://github.com/iovisor/kubectl-trace) - Schedule bpftrace programs on your kubernetes cluster using the kubectl
-
-* [ksniff](https://github.com/eldadru/ksniff) - Kubectl plugin to ease sniffing on kubernetes pods using tcpdump and wireshark
-
-* [rakkess](https://github.com/corneliusweig/rakkess) - Review Access - kubectl plugin to show an access matrix for k8s server resources
-
-* [kubectl-dig](https://github.com/sysdiglabs/kubectl-dig) - Deep kubernetes visibility from the kubectl
-
-* [kubectl-doctor](https://github.com/emirozer/kubectl-doctor) - k8s cluster triage plugin - scan your cluster for anomalies (brew doctor equivalent)
-
-* [kubectl-warp](https://github.com/ernoaapa/kubectl-warp) - Kubernetes CLI plugin for syncing and executing local files in Pod on Kubernetes
-
-* [kubelogin](https://github.com/int128/kubelogin) - kubectl plugin for Kubernetes OpenID Connect authentication (kubectl oidc-login)
-
-* [kubectl-sudo](https://github.com/postfinance/kubectl-sudo) - Run kubernetes commands with the security privileges of another user
-
-* [kubectl-cssh](https://github.com/containership/kubectl-cssh) - A kubectl plugin to ssh into Kubernetes nodes within separate tmux panes
-
-* [ketall](https://github.com/corneliusweig/ketall) - Like `kubectl get all`, but get really all resources
-
-* [kubectl-open-svc-plugin](https://github.com/superbrothers/kubectl-open-svc-plugin) - kubectl open-svc plugin makes services accessible via their ClusterIP from outside your cluster
-
-* [kubectl-capture](https://github.com/sysdiglabs/kubectl-capture) - A kubectl plugin which triggers a Sysdig capture https://sysdig.com/opensource/inspect/
-
-* [kubectl-grep](https://github.com/guessi/kubectl-grep) - Filter Kubernetes resources by matching their names
-
-* [kubectl-tmux-logs](https://github.com/brosandilabs/kubectl-tmux-logs) - A kubectl plugin to display container logs within separate tmux panes
-
-* [kubectl-plugin-ssh-jump](https://github.com/yokawasa/kubectl-plugin-ssh-jump) - A kubectl plugin to SSH into Kubernetes nodes using a SSH jump host Pod
-
-* [kubectl-view-serviceaccount-kubeconfig-plugin](https://github.com/superbrothers/kubectl-view-serviceaccount-kubeconfig-plugin) - A kubectl plugin that show a kubeconfig to access the apiserver with a specified serviceaccount.
-
-* [outdated](https://github.com/replicatedhq/outdated) - Find and report outdated images running in a Kubernetes cluster
-
-* [kubectl-ctx](https://github.com/postfinance/kubectl-ctx) - Simple kubectl plugin to display/switch contexts
-
-* [kubectl-extension-versions](https://github.com/GoogleCloudPlatform/kubectl-extension-versions) - kubectl plugin to print versions of well-known third-party controllers/operators installed in a cluster
-
-* [kubectl-enter](https://github.com/kvaps/kubectl-enter) - Exec into node via kubectl
-
-* [ksort](https://github.com/superbrothers/ksort) - Sort manifest files in a proper order by Kind
-
-* [kubectl-ns](https://github.com/postfinance/kubectl-ns) - Simple kubectl plugin to display/switch namespaces
-
-* [k8s-pixy-auth](https://github.com/auth0/k8s-pixy-auth) - k8s plugin to authenticate against an OIDC compatible issuer using PKCE (pixy) flow
-
-* [unfork](https://github.com/replicatedhq/unfork) - Kubectl plugin to find forked Helm Charts and other K8s resources and unfork them https://www.unfork.io
-
-* [kubectl-config-merge](https://github.com/kubedev/kubectl-config-merge) - A kubectl plugin for merging multiple kubeconfig files. A cli-runtime example.
-
-* [weibeld kubectl-ctx](https://github.com/weibeld/kubectl-ctx) - A kubectl plugin for interactively changing the kubeconfig context
-
-* [kubectl-switch](https://github.com/yulibaozi/kubectl-switch) - Kubernetes multi-cluster command-line management tool
-
-* [kubectl-iexec](https://github.com/gabeduke/kubectl-iexec) - Kubectl plugin to interactively exec into a pod
-
-* [kubectl-dashboard](https://github.com/bouk/kubectl-dashboard) - Instantly get a Kubernetes dashboard
-
-* [kubectl-watch](https://github.com/lee0c/kubectl-watch) - Watches Kubernetes resources
-
-* [konfig](https://github.com/corneliusweig/konfig) - konfig helps to merge, split or import kubeconfig files
-
-* [kubectl-login](https://github.com/sdrozdkov/kubectl-login) - Kubectl plugin for re-authenticate into OpenID Connect Provider via CLI
-
-* [kubectl-free](https://github.com/makocchi-git/kubectl-free) - Show various requested resources on Kubernetes nodes
-
-* [kubectl-ssh](https://github.com/IuryAlves/kubectl-ssh) - A kubectl plugin to ssh into a pod's node
-
-* [weibeld kubectl-ns](https://github.com/weibeld/kubectl-ns) - A kubectl plugin for interactively switching between namespaces in your cluster
-
-* [kubectl-kcn](https://github.com/marjamis/kubectl-kcn) - A script and kubectl plugin which makes it easier to ssh into nodes within your cluster.
-
-* [kubectlsafe](https://github.com/esin/kubectlsafe) - Safe operations in kubectl with plugin kubectlsafe
-
-* [kubectl-rainbow](https://github.com/retr0h/kubectl-rainbow) - Simple binary to colorize output.
-
-* [kubepod](https://github.com/karancode/kubepod) - Search pods faster in kubectl
-
-* [kubectl-all](https://github.com/kajanth/kubectl-all) - kubectl plugin to list all resources in given namespace
-
-* [kubectl-swiftnp](https://github.com/bmuschko/kubectl-swiftnp) - A kubectl plugin for rendering details of Network Policies.
-
-* [kubectl-plugin-pvc](https://github.com/fabiand/kubectl-plugin-pvc) - A simple kubectl binary plugin for PVC operations
-
-* [kubectl-pass](https://github.com/rafi/kubectl-pass) - kubectl plugin for integration with pass (the standard unix password manager)
-
-* [kubectl-clogs](https://github.com/ivkalita/kubectl-clogs) - kubectl plugin to follow logs of multiple running pods
-
-* [caas-one kubectl-switch](https://github.com/caas-one/kubectl-switch) - Kubernetes multi-cluster command-line management tool
-
-* [kubectl-custom-cols](https://github.com/webofmars/kubectl-custom-cols) - a kubectl plugin that help you customize output columns like a boss !
-
-* [kubectl-texec](https://github.com/TrsNium/kubectl-texec) - Attach to the pod matching the label with Tmux
-
-* [duyguserbest kubectl-iexec](https://github.com/duyguserbest/kubectl-iexec) - kubectl plugin to simplify interactive exec command.
-
-* [juanvallejo kubectl-ns](https://github.com/juanvallejo/kubectl-ns) - Quickly view or change the current namespace via kubectl.
-
-* [kubectl-server-version](https://github.com/bmuschko/kubectl-server-version) - A kubectl plugin for rendering the Kubernetes server version.
-
-* [zjj2wry kubectl-login](https://github.com/zjj2wry/kubectl-login) - The kubectl plugin is used to login to the kubernetes cluster by oidc authentication.
-
-* [kubectl-ansible](https://github.com/moshloop/kubectl-ansible) - An ansible dynamic inventory plugin for kubernetes cluster nodes
-
-* [km](https://github.com/cststack/km) - EKS MFA kubeconfig management tool. Thin wrapper for kubectl.
-
-* [kubectl-rotate-pods](https://github.com/mousavian/kubectl-rotate-pods) - kubectl plugin to easily restart all pods of a deployment
-
-* [kubectl-resources](https://github.com/howardjohn/kubectl-resources) - Plugin to access Kubernetes resource requests, limits, and usage.
-
-* [kubectl-config-cleanup](https://github.com/b23llc/kubectl-config-cleanup) - A kubectl plugin for automatically cleaning up your kubeconfig
-
-* [kubectl-match-name](https://github.com/gerald1248/kubectl-match-name) - regex matching for resource names
-
-* [kubectl-exec-all](https://github.com/jpdasma/kubectl-exec-all) - kubectl plugin to execute a command in all running pods of a resource (daemonset, deployment, statefulset, etc)
-
-* [kubectl-select-context](https://github.com/stefanm8/kubectl-select-context) - light kubectl plugin that prompts user to select config context
-
-* [kubectl-gitlab-bootstrap](https://github.com/eddiezane/kubectl-gitlab_bootstrap) - Quickly add a Kubernetes cluster to a GitLab project
-
-* [kubectl-ssm-secret](https://github.com/pr8kerl/kubectl-ssm-secret) - A kubectl plugin to allow import/export of kubernetes secrets to/from AWS SSM Parameter Store path.
-
-* [kubectl-dfi](https://github.com/makocchi-git/kubectl-dfi) - List and show disk resources of images on Kubernetes nodes.
-
-* [kubectl-decode-secret](https://github.com/brosandilabs/kubectl-decode-secret) - A kubectl plugin to decode Kubernetes secrets
-
-* [kubectl-use](https://github.com/kvaps/kubectl-use) - Plugin for simple switch kubernetes contexts and namespaces
-
-* [kubectl-nsenter](https://github.com/towolf/kubectl-nsenter) - Simple kubectl plugin to take pod name, SSH onto node and spawn an nsenter shell
-
-* [kvaps kubectl-ssh](https://github.com/kvaps/kubectl-ssh) - Tiny plugin for connecting to node in the cluster over SSH
-
-* [kubectl-lint](https://github.com/SethCurry/kubectl-lint) - A kubectl plugin to perform linting
-
-* [kubectl-utility](https://github.com/metrosystems-cpe/kubectl-utility) - Utility tool for observing k8s resources.
-
-* [kubectl-captain](https://github.com/alauda/kubectl-captain) - kubectl plugin for captain
-
-* [kubectl-unbound-pvc](https://github.com/ishantanu/kubectl-unbound-pvc) - A kubectl plugin to see PVCs which are not in "Bound" state
-
-* [kudo](https://kudo.dev/docs/cli.html#setup-the-kudo-kubectl-plugin) - A kubectl plugin to use [kudo](https://kudo.dev/) via kubectl CLI
-
-* [kubectl-tree](https://github.com/ahmetb/kubectl-tree) - A kubectl plugin to browse Kubernetes object hierarchies as a tree
-
-* [kubectl-graph](https://github.com/steveteuber/kubectl-graph) - A kubectl plugin to visualize Kubernetes resources and relationships.
-
-* [kubectl-modify-secret](https://github.com/rajatjindal/kubectl-modify-secret) - kubectl-modify-secrets allows user to directly modify the secret without worrying about base64 encoding/decoding
-
-* [kubectl preflight](https://github.com/replicatedhq/troubleshoot) - Preflight Checks and Support Bundles Framework for Kubernetes Applications https://troubleshoot.sh
-
-* [kubectl support-bundle](https://github.com/replicatedhq/troubleshoot) - Preflight Checks and Support Bundles Framework for Kubernetes Applications https://troubleshoot.sh
-
-* [kube-profefe](https://github.com/profefe/kube-profefe) - continuous profiling made easy in Kubernetes with profefe
-
-* [kubectl-who-can](https://github.com/aquasecurity/kubectl-who-can) - Show who has RBAC permissions to perform actions on different resources in Kubernetes
-
-* [kubectl-virt-plugin](https://github.com/kubevirt/kubectl-virt-plugin) - Holds all scripts to create packages and manifest file required for publishing the virtctl binary as a krew package for kubectl.
-
-* [kubectl-topology](https://github.com/bmcstdio/kubectl-topology) - Provides insight into the topology of a Kubernetes cluster.
-
-* [kube-capacity](https://github.com/robscott/kube-capacity) - A simple CLI that provides an overview of the resource requests, limits, and utilization in a Kubernetes cluster
-
-* [kubectl-neat](https://github.com/itaysk/kubectl-neat) - Clean up Kuberntes yaml and json output to make it readable
-
-* [kubectl-mtail](https://gitlab.com/grzesuav/kubectl-mtail) - Kubectl helper to get logs from multiple pods
-
-* [kubectl-kubesec](https://github.com/controlplaneio/kubectl-kubesec) - Security risk analysis for Kubernetes resources https://kubesec.io
-
-* [kubectl-gopass](https://github.com/gopasspw/kubectl-gopass) - Plugin for kubectl to support reading and writing secrets directly from/to gopass
-
-* [kubectl-eksporter](https://github.com/Kyrremann/kubectl-eksporter) - A simple Ruby-script to export k8s resources
-
-* [kubectl-df-pv](https://github.com/yashbhutwala/kubectl-df-pv) - kubectl plugin - giving admins df (disk free) like utility for persistent volumes
-
-* [kcf](https://github.com/kubectl-plus/kcf) - A CLI tool providing you with status & configuration of a Kubernetes cluster fleet
-
-* [Pod-Dive](https://github.com/caiobegotti/Pod-Dive) - A kubectl plugin to dive into your Kubernetes nodes pods, and inspect them.
- 
+| No. | Plugin                                                            | Description                                                                             | Category |
+| --- | ----------------------------------------------------------------- | -------------------------------------------- | -------- |
+| 1   | [rakkess](https://github.com/corneliusweig/rakkess)                                | Review Access - kubectl plugin to show an access matrix for k8s server resources                | RBAC                |
+| 2   | [kubectl-who-can](https://github.com/aquasecurity/kubectl-who-can)                 | Show who has RBAC permissions to perform actions on different resources in Kubernetes        | RBAC                |
+| 3   | [kubectl-lint](https://github.com/SethCurry/kubectl-lint)                          | A kubectl plugin to perform linting                                                              | Linting             |
+| 4   | [kubectl-neat](https://github.com/itaysk/kubectl-neat)                             | Clean up Kuberntes yaml and json output to make it readable                              | Linting             |
+| 5   | [ksort](https://github.com/superbrothers/ksort)                                    | Sort manifest files in a proper order by Kind                                                 | Linting             |
+| 6   | [kubectl-debug](https://github.com/aylei/kubectl-debug)                            | Debug your pod by a new container with every troubleshooting tools pre-installed               | Debugging           | 
+| 7   | [kube-profefe](https://github.com/profefe/kube-profefe)                            | continuous profiling made easy in Kubernetes with profefe                                  | Debugging           | 
+| 8   | [ksniff](https://github.com/eldadru/ksniff)                                        | Kubectl plugin to ease sniffing on kubernetes pods using tcpdump and wireshark                 | Networking          |
+| 9   | [kubectl-swiftnp](https://github.com/bmuschko/kubectl-swiftnp)                     | A kubectl plugin for rendering details of Network Policies.                                      | Networking          |
+| 10  | [kubectl-trace](https://github.com/iovisor/kubectl-trace)                          | Schedule bpftrace programs on your kubernetes cluster using the kubectl                  | Networking          |
+| 11  | [kubectl-capture](https://github.com/sysdiglabs/kubectl-capture)                   | A kubectl plugin which triggers a Sysdig capture https://sysdig.com/opensource/inspect/          | Networking          |
+| 12  | [kubectl-plugin-pvc](https://github.com/fabiand/kubectl-plugin-pvc)                | A simple kubectl binary plugin for PVC operations                                                | Storage             |
+| 13  | [kubectl-dfi](https://github.com/makocchi-git/kubectl-dfi)                         | List and show disk resources of images on Kubernetes nodes.                                   | Storage             |
+| 14  | [kubectl-unbound-pvc](https://github.com/ishantanu/kubectl-unbound-pvc)            | List and show disk resources of images on Kubernetes nodes.                                   | Storage             |
+| 15  | [kubectl-df-pv](https://github.com/yashbhutwala/kubectl-df-pv)                     | giving admins df (disk free) like utility for persistent volumes                                 | Storage             |
+| 16  | [kubectl-sudo](https://github.com/postfinance/kubectl-sudo)                        | Run kubernetes commands with the security privileges of another user                           | Security            |
+| 17  | [outdated](https://github.com/replicatedhq/outdated)                               | Find and report outdated images running in a Kubernetes cluster                                 | Security            |
+| 18  | [kubectl-kubesec](https://github.com/controlplaneio/kubectl-kubesec)               | Security risk analysis for Kubernetes resources https://kubesec.io                            | Security            |
+| 19  | [kubectl-enter](https://github.com/kvaps/kubectl-enter)                            | Exec into node via kubectl                                                                     | Exec                |
+| 20  | [kubectl-cssh](https://github.com/containership/kubectl-cssh)                      | A kubectl plugin to ssh into Kubernetes nodes within separate tmux panes                         | Exec                |
+| 21  | [kubectl-iexec](https://github.com/gabeduke/kubectl-iexec)                         | Kubectl plugin to interactively exec into a pod                                                | Exec                |
+| 22  | [kubectl-ssh](https://github.com/IuryAlves/kubectl-ssh)                            | A kubectl plugin to ssh into a pod's node                                                        | Exec                |
+| 23  | [kubectl-kcn](https://github.com/marjamis/kubectl-kcn)                             | A script and kubectl plugin which makes it easier to ssh into nodes within your cluster.     | Exec                |
+| 24  | [duyguserbest kubectl-iexec](https://github.com/duyguserbest/kubectl-iexec)        | A script and kubectl plugin which makes it easier to ssh into nodes within your cluster.     | Exec                |
+| 25  | [kubectl-exec-all](https://github.com/jpdasma/kubectl-exec-all)                    | kubectl plugin to execute a command in all running pods of a resource.                         | Exec                |
+| 26  | [kubectl-nsenter](https://github.com/towolf/kubectl-nsenter)                       | Simple kubectl plugin to take pod name, SSH onto node and spawn an nsenter shell               | Exec                |
+| 27  | [kvaps kubectl-ssh](https://github.com/kvaps/kubectl-ssh)                          | Tiny plugin for connecting to node in the cluster over SSH                                      | Exec                |
+| 28  | [kubectl-warp](https://github.com/ernoaapa/kubectl-warp)                           | Kubernetes CLI plugin for syncing and executing local files in Pod on Kubernetes               | Exec                |
+| 29  | [kubectl-plugin-ssh-jump](https://github.com/yokawasa/kubectl-plugin-ssh-jump)     | A kubectl plugin to SSH into Kubernetes nodes using a SSH jump host Pod                          | Exec                |
+| 30  | [kubectl-texec](https://github.com/TrsNium/kubectl-texec)                          | Attach to the pod matching the label with Tmux                                                | Exec                |
+| 31  | [kubectl-dig](https://github.com/sysdiglabs/kubectl-dig)                           | Deep kubernetes visibility from the kubectl                                                     | Visibility          |
+| 32  | [kubectl-utility](https://github.com/metrosystems-cpe/kubectl-utility)             | Utility tool for observing k8s resources.                                                        | Visibility          |
+| 33  | [kubectl-graph](https://github.com/steveteuber/kubectl-graph)                      | Utility tool for observing k8s resources.                                                        | Visibility          |
+| 34  | [kubectl-tree](https://github.com/ahmetb/kubectl-tree)                             | A kubectl plugin to browse Kubernetes object hierarchies as a tree                               | Visibility          |
+| 35  | [kubectl-topology](https://github.com/bmcstdio/kubectl-topology)                   | Utility tool for observing k8s resources.                                                        | Visibility          |
+| 36  | [Pod-Dive](https://github.com/caiobegotti/Pod-Dive)                                 | A kubectl plugin to dive into your Kubernetes nodes pods, and inspect them.               | Visibility          |
+| 37  | [kubectl-dashboard](https://github.com/bouk/kubectl-dashboard)                      | Instantly get a Kubernetes dashboard                                                            | Visibility          |
+| 38  | [kubelogin](https://github.com/int128/kubelogin)                                    | kubectl plugin for Kubernetes OpenID Connect authentication (kubectl oidc-login)               | Authn/Authz         |
+| 39  | [k8s-pixy-auth](https://github.com/auth0/k8s-pixy-auth)                             | k8s plugin to authenticate against an OIDC compatible issuer using PKCE (pixy) flow           | Authn/Authz         |
+| 40  | [kubectl-login](https://github.com/sdrozdkov/kubectl-login)                         | Kubectl plugin for re-authenticate into OpenID Connect Provider via CLI                        | Authn/Authz         |
+| 41  | [zjj2wry kubectl-login](https://github.com/zjj2wry/kubectl-login)                   | The kubectl plugin is used to login to the kubernetes cluster by oidc authentication.       | Authn/Authz         |
+| 42  | [kubectl-pass](https://github.com/rafi/kubectl-pass)                                | kubectl plugin for integration with pass (the standard unix password manager)                  | Authn/Authz         |
+| 43  | [kubectl-ssm-secret](https://github.com/pr8kerl/kubectl-ssm-secret)                 | A kubectl plugin to allow import/export of kubernetes secrets to/from AWS SSM Parameter Store path. | Secrets           |
+| 44  | [kubectl-decode-secret](https://github.com/brosandilabs/kubectl-decode-secret)      | A kubectl plugin to decode Kubernetes secrets                                             | Secrets             |
+| 45  | [kubectl-decode-secret](https://github.com/brosandilabs/kubectl-decode-secret)      | A kubectl plugin to decode Kubernetes secrets                                             | Secrets             |
+| 46  | [kubectl-gopass](https://github.com/gopasspw/kubectl-gopass)                        | Plugin for kubectl to support reading and writing secrets directly from/to gopass          | Secrets             |
+| 47  | [kubectl-modify-secret](https://github.com/rajatjindal/kubectl-modify-secret)       | kubectl-modify-secrets allows user to directly modify the secret without worrying about base64 encoding/decoding                                                               | Secrets             |
+| 48  | [weibeld kubectl-ctx](https://github.com/weibeld/kubectl-ctx)                       | A kubectl plugin for interactively changing the kubeconfig context                        | Context/Namespace Switching   |
+| 49  | [weibeld kubectl-ns](https://github.com/weibeld/kubectl-ns)                       | A kubectl plugin for interactively switching between namespaces in your cluster                  | Context/Namespace Switching   |
+| 50  | [postfinance kubectl-ctx](https://github.com/postfinance/kubectl-ctx)               | Simple kubectl plugin to display/switch contexts                                               | Context/Namespace Switching   |
+| 51  | [kubectl-select-context](https://github.com/stefanm8/kubectl-select-context)        | light kubectl plugin that prompts user to select config context                               | Context/Namespace Switching   |
+| 52  | [kubectl-use](https://github.com/kvaps/kubectl-use)                                 | Plugin for simple switch kubernetes contexts and namespaces                                | Context/Namespace Switching   |
+| 53  | [kubectx](https://github.com/ahmetb/kubectx)                                        | Switch faster between clusters and namespaces in kubectl https://kubectx.dev                  | Context/Namespace Switching   |
+| 54  | [kubectl-ns](https://github.com/postfinance/kubectl-ns)                            | Simple kubectl plugin to display/switch namespaces                                             | Context/Namespace Switching   |
+| 55  | [kubectl-use](https://github.com/kvaps/kubectl-use)                                | Plugin for simple switch kubernetes contexts and namespaces                                | Context/Namespace Switching   |
+| 56  | [kubectl-switch](https://github.com/yulibaozi/kubectl-switch)                      | Kubernetes multi-cluster command-line management tool                                      | Context/Namespace Switching   |
+| 57  | [caas-one kubectl-switch](https://github.com/caas-one/kubectl-switch)              | Kubernetes multi-cluster command-line management tool                                      | Context/Namespace Switching   |
+| 58  | [juanvallejo kubectl-ns](https://github.com/juanvallejo/kubectl-ns)              | Quickly view or change the current namespace via kubectl                                        | Context/Namespace Switching   |
+| 59  | [km](https://github.com/cststack/km)                                             | EKS MFA kubeconfig management tool. Thin wrapper for kubectl.                                      | Context/Namespace Switching   |
+| 60  | [ketall](https://github.com/corneliusweig/ketall)                                  | Like `kubectl get all`, but get really all resources                                          | Resource Listing       |
+| 61  | [kubectl-grep](https://github.com/guessi/kubectl-grep)                             | Filter Kubernetes resources by matching their names                                    | Resource Listing       |
+| 62  | [kubectl-all](https://github.com/kajanth/kubectl-all)                               | kubectl plugin to list all resources in given namespace                                        | Resource Listing       |
+| 63  | [kubectl-watch](https://github.com/lee0c/kubectl-watch)                              | Watches Kubernetes resources                                                            | Resource Listing       |
+| 64  | [kubectl-custom-cols](https://github.com/webofmars/kubectl-custom-cols)              | a kubectl plugin that help you customize output columns like a boss !                     | Resource Listing       |
+| 65  | [kubepod](https://github.com/karancode/kubepod)                                     | Search pods faster in kubectl                                                               | Resource Listing       | 
+| 66  | [kubectl-resources](https://github.com/howardjohn/kubectl-resources)                | Plugin to access Kubernetes resource requests, limits, and usage.                         | Resource Listing       | 
+| 67  | [kubectl-free](https://github.com/makocchi-git/kubectl-free)                         | Show various requested resources on Kubernetes nodes                                         | Resource Listing       |
+| 68  | [kubectl-match-name](https://github.com/gerald1248/kubectl-match-name)               | regex matching for resource names                                                              | Resource Listing       |
+| 69  | [kubectl-eksporter](https://github.com/Kyrremann/kubectl-eksporter)               | A simple Ruby-script to export k8s resources                                             | Resource Listing       |
+| 70  | [kube-capacity](https://github.com/robscott/kube-capacity)               | A simple CLI that provides an overview of the resource requests, limits, and utilization in a Kubernetes cluster | Resource Listing       |
+| 71  | [kubectl-extension-versions](https://github.com/GoogleCloudPlatform/kubectl-extension-versions) | Filter Kubernetes resources by matching their names                             | Controller/Operator    |
+| 72  | [kudo](https://kudo.dev/docs/cli.html#setup-the-kudo-kubectl-plugin)                 | A kubectl plugin to use [kudo](https://kudo.dev/) via kubectl CLI                         | Controller/Operator    |
+| 73  | [kubectl-tmux-logs](https://github.com/brosandilabs/kubectl-tmux-logs)              | A kubectl plugin to display container logs within separate tmux panes                     | Logging                |
+| 74  | [kubectl-clogs](https://github.com/ivkalita/kubectl-clogs)                          | kubectl plugin to follow logs of multiple running pods                                         | Logging                |
+| 75  | [kubectl-mtail](https://gitlab.com/grzesuav/kubectl-mtail)                          | Kubectl helper to get logs from multiple pods                                                  | Logging                |
+| 76  | [kubectl-open-svc-plugin](https://github.com/superbrothers/kubectl-open-svc-plugin) | kubectl open-svc plugin makes services accessible via their ClusterIP from outside your cluster | Uncategorized  |
+| 77  | [kubectl-doctor](https://github.com/emirozer/kubectl-doctor)                        | k8s cluster triage plugin - scan your cluster for anomalies (brew doctor equivalent)        | Uncategorized          |
+| 78  | [kubectl-view-serviceaccount-kubeconfig-plugin](https://github.com/superbrothers/kubectl-view-serviceaccount-kubeconfig-plugin)              | A kubectl plugin that show a kubeconfig to access the apiserver with a specified serviceaccount.                     | Uncategorized     |
+| 79  | [unfork](https://github.com/replicatedhq/unfork)                                    | Kubectl plugin to find forked Helm Charts and other K8s resources and unfork them https://www.unfork.io | Uncategorized       |
+| 80  | [kubectl-config-merge](https://github.com/kubedev/kubectl-config-merge)              | A kubectl plugin for merging multiple kubeconfig files. A cli-runtime example.            | Uncategorized          |
+| 81  | [konfig](https://github.com/corneliusweig/konfig)                                    | konfig helps to merge, split or import kubeconfig files                                         | Uncategorized       |
+| 82  | [kubectlsafe](https://github.com/esin/kubectlsafe)                                   | Safe operations in kubectl with plugin kubectlsafe                                   | Uncategorized          |
+| 83  | [kubectl-rainbow](https://github.com/retr0h/kubectl-rainbow)                         | Simple binary to colorize output.                                                             | Uncategorized          |
+| 84  | [kubectl-ansible](https://github.com/moshloop/kubectl-ansible)                       | An ansible dynamic inventory plugin for kubernetes cluster nodes                           | Uncategorized          |
+| 85  | [kubectl-server-version](https://github.com/bmuschko/kubectl-server-version)         | A kubectl plugin for rendering the Kubernetes server version.                             | Uncategorized          |
+| 86  | [kubectl-rotate-pods](https://github.com/mousavian/kubectl-rotate-pods)              | kubectl plugin to easily restart all pods of a deployment                                      | Uncategorized          |
+| 87  | [kubectl-config-cleanup](https://github.com/b23llc/kubectl-config-cleanup)           | A kubectl plugin for automatically cleaning up your kubeconfig                            | Uncategorized          |
+| 88  | [kubectl-gitlab-bootstrap](https://github.com/eddiezane/kubectl-gitlab_bootstrap)    | Quickly add a Kubernetes cluster to a GitLab project                                          | Uncategorized          |
+| 89  | [kubectl-captain](https://github.com/alauda/kubectl-captain)                         | kubectl plugin for captain                                                                     | Uncategorized          |
+| 90  | [kubectl preflight](https://github.com/replicatedhq/troubleshoot)                    | Preflight Checks and Support Bundles Framework for Kubernetes Applications https://troubleshoot.sh  | Uncategorized          |
+| 91  | [kubectl support-bundle](https://github.com/replicatedhq/troubleshoot)               | Preflight Checks and Support Bundles Framework for Kubernetes Applications https://troubleshoot.sh  | Uncategorized          |
+| 92  | [kubectl-virt-plugin](https://github.com/kubevirt/kubectl-virt-plugin)               | Holds all scripts to create packages and manifest file required for publishing the virtctl binary as a krew package for kubectl.  | Uncategorized          |
+| 93  | [kcf](https://github.com/kubectl-plus/kcf)                                           | A CLI tool providing you with status & configuration of a Kubernetes cluster fleet       | Uncategorized          | 
 ### Collection of kubectl plugins
 
 * [collection of kubectl plugins](https://github.com/jordanwilson230/kubectl-plugins) - A Collection of Plugins for kubectl Integration (context switching, ssh / exec as any user, etc).
