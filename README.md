@@ -176,8 +176,10 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 
 * [kudo](https://kudo.dev/docs/cli.html#setup-the-kudo-kubectl-plugin) - A kubectl plugin to use [kudo](https://kudo.dev/) via kubectl CLI
 
-* [kubectl-tree](https://github.com/ahmetb/kubectl-tree) - kubectl plugin to browse Kubernetes object hierarchies as a tree
+* [kubectl-tree](https://github.com/ahmetb/kubectl-tree) - A kubectl plugin to browse Kubernetes object hierarchies as a tree
 
+* [kubectl-graph](https://github.com/steveteuber/kubectl-graph) - A kubectl plugin to visualize Kubernetes resources and relationships.
+ 
 ### Collection of kubectl plugins
 
 * [collection of kubectl plugins](https://github.com/jordanwilson230/kubectl-plugins) - A Collection of Plugins for kubectl Integration (context switching, ssh / exec as any user, etc).
