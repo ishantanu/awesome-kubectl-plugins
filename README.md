@@ -179,6 +179,38 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 * [kubectl-tree](https://github.com/ahmetb/kubectl-tree) - A kubectl plugin to browse Kubernetes object hierarchies as a tree
 
 * [kubectl-graph](https://github.com/steveteuber/kubectl-graph) - A kubectl plugin to visualize Kubernetes resources and relationships.
+
+* [kubectl-modify-secret](https://github.com/rajatjindal/kubectl-modify-secret) - kubectl-modify-secrets allows user to directly modify the secret without worrying about base64 encoding/decoding
+
+* [kubectl preflight](https://github.com/replicatedhq/troubleshoot) - Preflight Checks and Support Bundles Framework for Kubernetes Applications https://troubleshoot.sh
+
+* [kubectl support-bundle](https://github.com/replicatedhq/troubleshoot) - Preflight Checks and Support Bundles Framework for Kubernetes Applications https://troubleshoot.sh
+
+* [kube-profefe](https://github.com/profefe/kube-profefe) - continuous profiling made easy in Kubernetes with profefe
+
+* [kubectl-who-can](https://github.com/aquasecurity/kubectl-who-can) - Show who has RBAC permissions to perform actions on different resources in Kubernetes
+
+* [kubectl-virt-plugin](https://github.com/kubevirt/kubectl-virt-plugin) - Holds all scripts to create packages and manifest file required for publishing the virtctl binary as a krew package for kubectl.
+
+* [kubectl-topology](https://github.com/bmcstdio/kubectl-topology) - Provides insight into the topology of a Kubernetes cluster.
+
+* [kube-capacity](https://github.com/robscott/kube-capacity) - A simple CLI that provides an overview of the resource requests, limits, and utilization in a Kubernetes cluster
+
+* [kubectl-neat](https://github.com/itaysk/kubectl-neat) - Clean up Kuberntes yaml and json output to make it readable
+
+* [kubectl-mtail](https://gitlab.com/grzesuav/kubectl-mtail) - Kubectl helper to get logs from multiple pods
+
+* [kubectl-kubesec](https://github.com/controlplaneio/kubectl-kubesec) - Security risk analysis for Kubernetes resources https://kubesec.io
+
+* [kubectl-gopass](https://github.com/gopasspw/kubectl-gopass) - Plugin for kubectl to support reading and writing secrets directly from/to gopass
+
+* [kubectl-eksporter](https://github.com/Kyrremann/kubectl-eksporter) - A simple Ruby-script to export k8s resources
+
+* [kubectl-df-pv](https://github.com/yashbhutwala/kubectl-df-pv) - kubectl plugin - giving admins df (disk free) like utility for persistent volumes
+
+* [kcf](https://github.com/kubectl-plus/kcf) - A CLI tool providing you with status & configuration of a Kubernetes cluster fleet
+
+* [Pod-Dive](https://github.com/caiobegotti/Pod-Dive) - A kubectl plugin to dive into your Kubernetes nodes pods, and inspect them.
  
 ### Collection of kubectl plugins
 
@@ -189,5 +221,6 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 * [collection - kubectl plugins](https://github.com/thecloudnatives/kubectl-plugins) - A list of plugins that enhance the kubectl CLI
 
 * [collection - kubectl plugins](https://github.com/thobiast/kubectl-plugins) - It is a set of kubectl plugins.
- 
+
 * [collection - kubectl plugins](https://github.com/ripta/kubectl-plugins) - These be collection of kubectl plugins!
+
