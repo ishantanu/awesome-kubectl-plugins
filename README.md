@@ -172,7 +172,9 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 
 * [kubectl-captain](https://github.com/alauda/kubectl-captain) - kubectl plugin for captain
 
-* [kubectl-unbound-pvc](https://github.com/ishantanu/kubectl-unbound-pvc) - A kubectl plugint to see PVCs which are not in "Bound" state
+* [kubectl-unbound-pvc](https://github.com/ishantanu/kubectl-unbound-pvc) - A kubectl plugin to see PVCs which are not in "Bound" state
+
+* [kudo](https://kudo.dev/docs/cli.html#setup-the-kudo-kubectl-plugin) - A kubectl plugin to use [kudo](https://kudo.dev/) via kubectl CLI
 
 ### Collection of kubectl plugins
 
