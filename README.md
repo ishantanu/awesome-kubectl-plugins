@@ -126,6 +126,7 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 | 91  | [kubectl support-bundle](https://github.com/replicatedhq/troubleshoot)               | Preflight Checks and Support Bundles Framework for Kubernetes Applications https://troubleshoot.sh  | Uncategorized          |
 | 92  | [kubectl-virt-plugin](https://github.com/kubevirt/kubectl-virt-plugin)               | Holds all scripts to create packages and manifest file required for publishing the virtctl binary as a krew package for kubectl.  | Uncategorized          |
 | 93  | [kcf](https://github.com/kubectl-plus/kcf)                                           | A CLI tool providing you with status & configuration of a Kubernetes cluster fleet       | Uncategorized          | 
+
 ### Collection of kubectl plugins
 
 * [collection of kubectl plugins](https://github.com/jordanwilson230/kubectl-plugins) - A Collection of Plugins for kubectl Integration (context switching, ssh / exec as any user, etc).
@@ -137,4 +138,6 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 * [collection - kubectl plugins](https://github.com/thobiast/kubectl-plugins) - It is a set of kubectl plugins.
 
 * [collection - kubectl plugins](https://github.com/ripta/kubectl-plugins) - These be collection of kubectl plugins!
+
+* [kubectl-everything](https://github.com/PeterGrace/kubectl-everything) - Various kubectl plugins to make life easier
 
