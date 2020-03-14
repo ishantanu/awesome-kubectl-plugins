@@ -24,6 +24,7 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 
 ## Blog Posts
 
+* [How to write a kubectl plugin](https://elsesiy.com/blog/how-to-kubectl-plugin)
 * [Extending kubectl with plugins](https://kubernetes.io/docs/tasks/extend-kubectl/kubectl-plugins/)
 * [Write your own kubectl subcommands](https://ahmet.im/blog/kubectl-plugins/)
 * [Manage Kubernetes Plugins with Krew](https://thepracticalsysadmin.com/manage-kubernetes-plugins-with-krew/)
@@ -128,6 +129,7 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 | 93  | [kubectl-virt-plugin](https://github.com/kubevirt/kubectl-virt-plugin)               | Holds all scripts to create packages and manifest file required for publishing the virtctl binary as a krew package for kubectl.  | Uncategorized          |
 | 94  | [kcf](https://github.com/kubectl-plus/kcf)                                           | A CLI tool providing you with status & configuration of a Kubernetes cluster fleet       | Uncategorized          | 
 | 95  | [kubepug](https://github.com/rikatz/kubepug)                                         | Kubernetes PreUpGrade (Checker)                                                          | Uncategorized          |
+| 96  | [kubectl view-secret](https://github.com/elsesiy/kubectl-view-secret)                                         | Decode Kubernetes secrets                                                      | Secrets |
 
 ### Collection of kubectl plugins
 
@@ -142,4 +144,3 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 * [collection - kubectl plugins](https://github.com/ripta/kubectl-plugins) - These be collection of kubectl plugins!
 
 * [kubectl-everything](https://github.com/PeterGrace/kubectl-everything) - Various kubectl plugins to make life easier
-
