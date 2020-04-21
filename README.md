@@ -68,7 +68,7 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 | 32  | [kubectl-utility](https://github.com/metrosystems-cpe/kubectl-utility)             | Utility tool for observing k8s resources.                                                        | Visibility          |
 | 33  | [kubectl-graph](https://github.com/steveteuber/kubectl-graph)                      | Utility tool for observing k8s resources.                                                        | Visibility          |
 | 34  | [kubectl-tree](https://github.com/ahmetb/kubectl-tree)                             | A kubectl plugin to browse Kubernetes object hierarchies as a tree                               | Visibility          |
-| 35  | [kubectl-topology](https://github.com/bmcstdio/kubectl-topology)                   | Utility tool for observing k8s resources.                                                        | Visibility          |
+| 35  | [kubectl-topology](https://github.com/bmcustodio/kubectl-topology)                 | A kubectl plugin that provides insight into the topology of a Kubernetes cluster.                | Visibility          |
 | 36  | [Pod-Dive](https://github.com/caiobegotti/Pod-Dive)                                 | A kubectl plugin to dive into your Kubernetes nodes pods, and inspect them.               | Visibility          |
 | 37  | [kubectl-dashboard](https://github.com/bouk/kubectl-dashboard)                      | Instantly get a Kubernetes dashboard                                                            | Visibility          |
 | 38  | [kubelogin](https://github.com/int128/kubelogin)                                    | kubectl plugin for Kubernetes OpenID Connect authentication (kubectl oidc-login)               | Authn/Authz         |
@@ -130,6 +130,7 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 | 94  | [kcf](https://github.com/kubectl-plus/kcf)                                           | A CLI tool providing you with status & configuration of a Kubernetes cluster fleet       | Uncategorized          | 
 | 95  | [kubepug](https://github.com/rikatz/kubepug)                                         | Kubernetes PreUpGrade (Checker)                                                          | Uncategorized          |
 | 96  | [kubectl view-secret](https://github.com/elsesiy/kubectl-view-secret)                                         | Decode Kubernetes secrets                                                      | Secrets |
+| 97  | [kubectl-cilium](https://github.com/bmcustodio/kubectl-cilium)                     | A kubectl plugin for interacting with Cilium.                                                    | Networking
 
 ### Collection of kubectl plugins
 
