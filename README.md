@@ -108,7 +108,7 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 | 72  | [kubectl-terminate](https://github.com/xcoulon/kubectl-terminate)                    | kubectl-terminate, a kubectl plugin to remove finalizers and finally delete k8s resources  | Resource CRUDs        |
 | 73  | [kubectl-extension-versions](https://github.com/GoogleCloudPlatform/kubectl-extension-versions) | Filter Kubernetes resources by matching their names                             | Controller/Operator    |
 | 74  | [kudo](https://kudo.dev/docs/cli.html#setup-the-kudo-kubectl-plugin)                 | A kubectl plugin to use [kudo](https://kudo.dev/) via kubectl CLI                         | Controller/Operator    |
-| 75  | [interactive](https://github.com/similarweb/kubectl-interactive)                 | A kubectl plugin that provides interactive, easy-to-use and flexible interface                   | Controller/Operator    |
+| 75  | [ipick](https://github.com/similarweb/kubectl-ipick)                 | A kubectl wrapper for interactive resource selection                   | Controller/Operator    |
 | 76  | [kubectl-tmux-logs](https://github.com/brosandilabs/kubectl-tmux-logs)              | A kubectl plugin to display container logs within separate tmux panes                     | Logging                |
 | 77  | [kubectl-clogs](https://github.com/ivkalita/kubectl-clogs)                          | kubectl plugin to follow logs of multiple running pods                                         | Logging                |
 | 78  | [kubectl-mtail](https://gitlab.com/grzesuav/kubectl-mtail)                          | Kubectl helper to get logs from multiple pods                                                  | Logging                |
