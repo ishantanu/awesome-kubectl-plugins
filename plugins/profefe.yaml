@@ -1,0 +1,38 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: profefe
+spec:
+  version: v0.10.0
+  homepage: https://github.com/profefe/kube-profefe
+  shortDescription: Gather and manage pprof profiles from running pods
+  description: |
+    This plugin helps to manage pprof profiles via Profefe. It allows to
+    collect profiles from running pods with Profefe and retrieve or inspect
+    profiles stored in Profefe. For more information about Profefe, visit
+    https://profefe.dev
+  platforms:
+    - selector:
+        matchLabels:
+          os: darwin
+          arch: amd64
+      uri: https://github.com/profefe/kube-profefe/releases/download/v0.10.0/kube-profefe_v0.10.0_Darwin_x86_64.tar.gz
+      sha256: 4eb5b3e56dc8616e4b077c666275719b8bc4b5f647aef2ed4913f11e88a096fd
+      bin: kubectl-profefe
+      files:
+        - from: kubectl-profefe
+          to: .
+        - from: LICENSE
+          to: .
+    - selector:
+        matchLabels:
+          os: linux
+          arch: amd64
+      uri: https://github.com/profefe/kube-profefe/releases/download/v0.10.0/kube-profefe_v0.10.0_Linux_x86_64.tar.gz
+      sha256: 3408577c735e423171c2da2a8fbc8b447015acc56ae23b175ba900a07593063e
+      bin: kubectl-profefe
+      files:
+        - from: kubectl-profefe
+          to: .
+        - from: LICENSE
+          to: .

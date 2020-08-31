@@ -1,0 +1,27 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: unbound-pvc       
+spec:
+  version: "v0.0.1"      
+  platforms:
+  - selector:           
+      matchExpressions:
+      - {key: os, operator: In, values: [darwin, linux]}
+    uri: https://github.com/ishantanu/kubectl-unbound-pvc/archive/v0.0.1.zip
+    sha256: "c8a163cc9a60af26f41d13c6641aca40fbc5f35a247867f1082a077398f0e06c"
+    files:
+    - from: "./kubectl-unbound-pvc-*/kubectl-unbound_pvc"
+      to:  "."                 
+    - from: "./kubectl-unbound-pvc-*/LICENSE"
+      to: "."
+    bin: "kubectl-unbound_pvc"
+  shortDescription: >-    
+    Show dangling Persistent Volume Claims
+  homepage: https://github.com/ishantanu/kubectl-unbound_pvc
+  caveats: |
+    This plugin needs the following programs:
+    * jq
+  description: |
+    This plugin shows all the Persistent Volume Claims in a Kubernetes
+    cluster which are not in "Bound" state. 

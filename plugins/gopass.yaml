@@ -1,0 +1,36 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: gopass
+spec:
+  version: "v0.1.1"
+  platforms:
+    - selector:
+        matchExpressions:
+          - {key: os, operator: In, values: [darwin, linux]}
+      uri: https://github.com/gopasspw/kubectl-gopass/archive/v0.1.1.zip
+      sha256: "869eab528001789843ac428140149553d47bd8097c04348919cfcd23180c96d5"
+      files:
+        - from: kubectl-gopass-*/kubectl-gopass
+          to: .
+        - from: kubectl-gopass-*/LICENSE
+          to: kubectl-gopass.exe
+      bin: kubectl-gopass
+    - selector:
+        matchLabels:
+          os: windows
+      uri: https://github.com/gopasspw/kubectl-gopass/archive/v0.1.1.zip
+      sha256: "869eab528001789843ac428140149553d47bd8097c04348919cfcd23180c96d5"
+      files:
+        - from: kubectl-gopass-*/kubectl-gopass
+          to: kubectl-gopass.exe
+        - from: kubectl-gopass-*/LICENSE
+          to: kubectl-gopass.exe
+      bin: kubectl-gopass.exe
+  shortDescription: Imports secrets from gopass
+  homepage: https://github.com/gopasspw/kubectl-gopass
+  caveats: |
+    This plugin requires bash and gopass
+  description: |
+    This plugin allows applying and diffing secrets from gopass to kubernetes
+    and creating kubernetes secrets in gopass (https://www.gopass.pw/).

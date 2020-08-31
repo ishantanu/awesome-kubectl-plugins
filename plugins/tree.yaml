@@ -1,0 +1,47 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: tree
+spec:
+  version: v0.4.0
+  homepage: https://github.com/ahmetb/kubectl-tree
+  shortDescription: Show a tree of object hierarchies through ownerReferences
+  description: |
+    This plugin shows sub-resources of a specified Kubernetes API object in a
+    tree view in the command-line. The parent-child relationship is discovered
+    using ownerReferences on the child object.
+  caveats: |
+    * For resources that are not in default namespace, currently you must
+      specify -n/--namespace explicitly (the current namespace setting is not
+      yet used).
+  platforms:
+  - selector:
+      matchLabels:
+        os: darwin
+        arch: amd64
+    uri: https://github.com/ahmetb/kubectl-tree/releases/download/v0.4.0/kubectl-tree_v0.4.0_darwin_amd64.tar.gz
+    sha256: c90dd260212b7da7163f12a27269923dedaeb17667616d990aa7ddbee31d2364
+    files:
+    - from: "*"
+      to: "."
+    bin: kubectl-tree
+  - selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+    uri: https://github.com/ahmetb/kubectl-tree/releases/download/v0.4.0/kubectl-tree_v0.4.0_linux_amd64.tar.gz
+    sha256: 3253a981099abceb41f2ea32c89489fd1ba459d950becef2e302f79a8b2f0507
+    files:
+    - from: "*"
+      to: "."
+    bin: kubectl-tree
+  - selector:
+      matchLabels:
+        os: windows
+        arch: amd64
+    uri: https://github.com/ahmetb/kubectl-tree/releases/download/v0.4.0/kubectl-tree_v0.4.0_windows_amd64.tar.gz
+    sha256: 8fe0fefe22816c3c34116f7b2e236bc351db053a839f7e2f396c7eaaf88e612c
+    files:
+    - from: "*"
+      to: "."
+    bin: kubectl-tree.exe

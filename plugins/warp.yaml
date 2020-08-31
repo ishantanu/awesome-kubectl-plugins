@@ -1,0 +1,40 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: warp
+spec:
+  version: "v0.0.2"
+  homepage: https://github.com/ernoaapa/kubectl-warp
+  shortDescription: Sync and execute local files in Pod
+  description: |
+    This plugin is like `kubectl run` with `rsync`.
+    It creates temporary Pod and synchronises your local files to
+    the desired container and executes any command.
+  platforms:
+  - selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+    uri: https://github.com/ernoaapa/kubectl-warp/releases/download/v0.0.2/kubectl-warp_0.0.2_linux_amd64.tar.gz
+    sha256: "be5acacba8fd3c6693c6cad633e228f9736d34eed5d30b8457101a0c6379fb37"
+    files:
+    - from: kubectl-warp
+      to: .
+    - from: LICENSE
+      to: .
+    bin: ./kubectl-warp
+  - selector:
+      matchLabels:
+        os: darwin
+        arch: amd64
+    uri: https://github.com/ernoaapa/kubectl-warp/releases/download/v0.0.2/kubectl-warp_0.0.2_darwin_amd64.tar.gz
+    sha256: "9c9821536258b3eb185a44100ad95c7018cb1e0258fb400348843b39f1286136"
+    files:
+    - from: kubectl-warp
+      to: .
+    - from: LICENSE
+      to: .
+    bin: ./kubectl-warp
+  caveats: |
+    This plugin needs the following programs:
+    * rsync

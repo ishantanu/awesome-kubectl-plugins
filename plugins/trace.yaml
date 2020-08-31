@@ -1,0 +1,78 @@
+# Copyright 2020 The Kubernetes Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: trace
+spec:
+  version: "v0.3.4"
+  homepage: https://github.com/iovisor/kubectl-trace
+  shortDescription: bpftrace programs in a cluster
+  description: |
+    kubectl trace is a kubectl plugin that allows you to schedule the
+    execution of bpftrace programs in your Kubernetes cluster.
+
+    Examples:
+
+      # Count system calls using tracepoints on a specific node
+      kubectl trace run node/kubernetes-8.myproject.internal \
+        -e 'kprobe:do_sys_open { printf("%s: %s\n", comm, str(arg1)) }'
+
+      # Execute a bpftrace program from file on a specific node
+      kubectl trace run node/kubernetes-8.myproject.internal -f read.bt
+
+      # Run an bpftrace inline program on a pod container
+      kubectl trace run pod/nginx -c nginx \
+        -e "tracepoint:syscalls:sys_enter_* { @[probe] = count(); }"
+      kubectl trace run pod/nginx nginx \
+        -e "tracepoint:syscalls:sys_enter_* { @[probe] = count(); }"
+
+  platforms:
+    - uri: https://github.com/iovisor/kubectl-trace/releases/download/v0.1.0-rc.1/kubectl-trace_0.1.0-rc.1_darwin_amd64.tar.gz
+      sha256: 52344e307daccb7aee559268c972bfd5b06de514066647ed6d4205aa0239df40
+      bin: kubectl-trace
+      files:
+        - from: ./kubectl-trace
+          to: kubectl-trace
+        - from: ./LICENSE
+          to: .
+      selector:
+        matchLabels:
+          os: darwin
+          arch: amd64
+    - uri: https://github.com/iovisor/kubectl-trace/releases/download/v0.1.0-rc.1/kubectl-trace_0.1.0-rc.1_linux_amd64.tar.gz
+      sha256: cd151705bb5e8964aef5f4f8a6443dcdaef5ea66f5960371404e18b47edd485f
+      bin: kubectl-trace
+      files:
+        - from: ./kubectl-trace
+          to: kubectl-trace
+        - from: ./LICENSE
+          to: .
+      selector:
+        matchLabels:
+          os: linux
+          arch: amd64
+    - uri: https://github.com/iovisor/kubectl-trace/releases/download/v0.1.0-rc.1/kubectl-trace_0.1.0-rc.1_windows_amd64.zip
+      sha256: 0d16f1e00ec990833986d3be4b2997ac48fd036fc3b30834b23eca30ee327853
+      bin: kubectl-trace.exe
+      files:
+        - from: ./kubectl-trace.exe
+          to: kubectl-trace.exe
+        - from: ./LICENSE
+          to: .
+      selector:
+        matchLabels:
+          os: windows
+          arch: amd64

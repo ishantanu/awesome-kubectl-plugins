@@ -1,0 +1,61 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: access-matrix
+spec:
+  version: v0.4.5
+  platforms:
+  - bin: access-matrix
+    uri: https://github.com/corneliusweig/rakkess/releases/download/v0.4.5/access-matrix-amd64-linux.tar.gz
+    sha256: 2f1c1d9b3baef4b35d8d397ff99b9dfbb00294f876a0b0beff80af9bfdb5e602
+    files:
+      - from: ./LICENSE
+        to: .
+      - from: ./access-matrix-amd64-linux
+        to: access-matrix
+    selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+  - bin: access-matrix
+    uri: https://github.com/corneliusweig/rakkess/releases/download/v0.4.5/access-matrix-amd64-darwin.tar.gz
+    sha256: 8508d096c46d920af20bd0d4cbca450c0df3e62c87b8195f61aeea5a8e188d12
+    files:
+      - from: ./LICENSE
+        to: .
+      - from: ./access-matrix-amd64-darwin
+        to: access-matrix
+    selector:
+      matchLabels:
+        os: darwin
+        arch: amd64
+  - bin: access-matrix.exe
+    uri: https://github.com/corneliusweig/rakkess/releases/download/v0.4.5/access-matrix-amd64-windows.zip
+    sha256: 699ba5864ac672c9e263401f87d645db8051d6e7b46bc506f0973f948f57a5fe
+    files:
+      - from: ./LICENSE
+        to: .
+      - from: ./access-matrix-amd64-windows.exe
+        to: access-matrix.exe
+    selector:
+      matchLabels:
+        os: windows
+        arch: amd64
+  shortDescription: Show an RBAC access matrix for server resources
+  homepage: https://github.com/corneliusweig/rakkess
+  caveats: |
+      Usage:
+        kubectl access-matrix
+        kubectl access-matrix for pods
+  description: |
+      Show an access matrix for server resources
+
+      This plugin retrieves the full list of server resources, checks access for
+      the current user with the given verbs, and prints the result as a matrix.
+      This complements the usual "kubectl auth can-i" command, which works for
+      a single resource and a single verb. For example:
+       $ kubectl access-matrix
+
+      It also supports a mode which prints all subjects with access to a given
+      resource (needs read access to Roles and ClusterRoles). For example:
+       $ kubectl access-matrix for configmap

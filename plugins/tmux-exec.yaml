@@ -1,0 +1,37 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: tmux-exec
+spec:
+  version: "v0.1.1"
+  platforms:
+  - selector:
+      matchExpressions:
+      - {key: os, operator: In, values: [darwin, linux]}
+    uri: https://github.com/predatorray/kubectl-tmux-exec/releases/download/v0.1.1/kubectl-tmux-exec-0.1.1.tar.gz
+    sha256: "de16c3c23082cca7749575ad472d6c597a84b9d2fd9015f1b7f9888557bc4c6d"
+    bin: "bin/kubectl-tmux_exec"
+  shortDescription: >- 
+    An exec multiplexer using Tmux
+  homepage: https://github.com/predatorray/kubectl-tmux-exec
+  caveats: |
+    This plugin needs the following programs:
+    * tmux(1)
+    * gnu-getopt(1)
+
+    Since the `getopt` in GNU-Linux is by default the GNU's one,
+    it is not required to install `gnu-getopt` again.
+
+    But, if you are using Mac, please follow the instruction below.
+    1. `brew install gnu-getopt`, or download it from its website
+       and install it manually.
+    2. Either add `export GNU_GETOPT_PREFIX="$(brew --prefix gnu-getopt)"`
+       to your profile file, which is RECOMMENDED.
+       Or, replace the `getopt` with `gnu-getopt` by adding it to
+       the head of `$PATH` env, like
+       `export PATH="$(brew --prefix gnu-getopt)/bin:$PATH"`.
+  description: |
+    This plugin uses Tmux to multiplex commands to pods.
+    Instead of `exec bash` into multiple pod's containers one-at-a-time,
+    you can now do it at the same time by opening multiple panes in a window.
+    Run 'kubectl tmux-exec --help' for more information on the plugin.

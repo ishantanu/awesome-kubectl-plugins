@@ -1,0 +1,56 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: get-all
+spec:
+  version: v1.3.2
+  platforms:
+  - uri: https://github.com/corneliusweig/ketall/releases/download/v1.3.2/get-all-amd64-linux.tar.gz
+    sha256: 51402039d67e87057c0c457e534a02e3247ba5c28cc2cb391ec758fd8b05be54
+    bin: get-all-amd64-linux
+
+    files:
+    - from: get-all-amd64-linux
+      to: .
+    - from: LICENSE
+      to: .
+    selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+  - uri: https://github.com/corneliusweig/ketall/releases/download/v1.3.2/get-all-amd64-darwin.tar.gz
+    sha256: f02c0d5ce7265061d44e4c55b78b15aa7954de45aff62650c6dfb3506163abd5
+    bin: get-all-amd64-darwin
+    files:
+    - from: get-all-amd64-darwin
+      to: .
+    - from: LICENSE
+      to: .
+    selector:
+      matchLabels:
+        os: darwin
+        arch: amd64
+  - uri: https://github.com/corneliusweig/ketall/releases/download/v1.3.2/get-all-amd64-windows.zip
+    sha256: 7fb4265cc94274588af59f2055033eb068978551a23d76d672b210eb8b9aae26
+    bin: get-all-amd64-windows.exe
+    files:
+    - from: get-all-amd64-windows.exe
+      to: .
+    - from: LICENSE
+      to: .
+    selector:
+      matchLabels:
+        os: windows
+        arch: amd64
+  shortDescription: Like `kubectl get all` but _really_ everything
+  homepage: https://github.com/corneliusweig/ketall
+  description: |+2
+
+      Like 'kubectl get all', but get _really_ all resources
+
+      For a complete overview of all resources in a kubernetes cluster,
+       $ kubectl get all --all-namespaces
+      is not enough, because it simply does not show everything. This helper
+      lists _really_ all resources on the cluster.
+
+      More on https://github.com/corneliusweig/ketall/blob/master/doc/USAGE.md

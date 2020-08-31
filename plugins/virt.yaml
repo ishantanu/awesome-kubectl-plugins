@@ -1,0 +1,70 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: virt
+spec:
+  version: "v0.32.0"
+  platforms:
+    - selector:
+        matchLabels:
+          os: darwin
+          arch: amd64
+      uri: "https://github.com/kubevirt/kubectl-virt-plugin/releases/download/v0.32.0/virtctl-darwin-amd64.tar.gz"
+      sha256: "c980facd7b9939e2634a3aaad5d2d34a7d8108ee9a9f3270fb061440998db0d7"
+      files:
+        - from: "/virtctl/virtctl-darwin-amd64"
+          to: "virtctl"
+        - from: virtctl/LICENSE
+          to: .
+      bin: "virtctl"
+    - selector:
+        matchLabels:
+          os: linux
+          arch: amd64
+      uri: "https://github.com/kubevirt/kubectl-virt-plugin/releases/download/v0.32.0/virtctl-linux-amd64.tar.gz"
+      sha256: "b89d178c13b399ab2d5c3146b188f1b06b68f112252a180e86f5fd040d8086a9"
+      files:
+        - from: "/virtctl/virtctl-linux-amd64"
+          to: "virtctl"
+        - from: virtctl/LICENSE
+          to: .
+      bin: "virtctl"
+    - selector:
+        matchLabels:
+          os: windows
+          arch: amd64
+      uri: "https://github.com/kubevirt/kubectl-virt-plugin/releases/download/v0.32.0/virtctl-windows-amd64.exe.tar.gz"
+      sha256: "0f2ff2b776bcfc674ca0077bbf65aa63065372aef3c25890dc86f17c1839900b"
+      files:
+        - from: "/virtctl/virtctl-windows-amd64.exe"
+          to: "virtctl.exe"
+        - from: virtctl/LICENSE
+          to: .
+      bin: "virtctl.exe"
+  shortDescription: Control KubeVirt virtual machines using virtctl
+  homepage: https://kubevirt.io
+  caveats: |
+    virt plugin is a wrapper for virtctl originating from the KubeVirt project. In order to use virtctl you will
+    need to have KubeVirt installed on your Kubernetes cluster to use it. See https://kubevirt.io/ for details
+
+    See
+
+      https://kubevirt.io/user-guide/docs/latest/using-virtual-machines/graphical-and-console-access.html
+
+    for a usage example
+  description: |
+    virt plugin is a wrapper for virtctl originating from the KubeVirt project. KubeVirt is a virtualization add-on to
+    Kubernetes, i.e. it enables to run existing virtual machines on Kubernetes clusters. virtctl controls virtual
+    machine related operations on your Kubernetes cluster like connecting to the serial and VNC consoles.
+
+    Kubevirt documentation:
+      Installation:
+        https://kubevirt.io/user-guide/docs/latest/administration/intro.html
+      User Guide:
+        https://kubevirt.io/user-guide/docs/latest/welcome/index.html
+      Minikube Quickstart:
+        https://kubevirt.io/quickstart_minikube/
+      Virtctl usage examples:
+        https://kubevirt.io/user-guide/docs/latest/using-virtual-machines/graphical-and-console-access.html
+        https://kubevirt.io/user-guide/docs/latest/using-virtual-machines/expose-service.html
+        https://kubevirt.io/user-guide/docs/latest/using-virtual-machines/virtual-machine-replica-set.html

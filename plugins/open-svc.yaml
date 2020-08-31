@@ -1,0 +1,49 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: open-svc
+spec:
+  platforms:
+  - uri: "https://github.com/superbrothers/kubectl-open-svc-plugin/releases/download/v2.4.1/kubectl-open_svc-darwin-amd64.zip"
+    sha256: "61c1a01630a601c003fd8fb3c57bb1bb9d148814488c4e4bb91461d1468bf31b"
+    bin: kubectl-open_svc
+    files:
+    - from: kubectl-open_svc
+      to: .
+    - from: LICENSE
+      to: .
+    selector:
+      matchLabels:
+        os: darwin
+        arch: amd64
+  - uri: "https://github.com/superbrothers/kubectl-open-svc-plugin/releases/download/v2.4.1/kubectl-open_svc-linux-amd64.zip"
+    sha256: "0b91cbdb3a5860b510c1cc2838eaea19a83c327be1a182d68541084fb86793ac"
+    bin: kubectl-open_svc
+    files:
+    - from: kubectl-open_svc
+      to: .
+    - from: LICENSE
+      to: .
+    selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+  - uri: "https://github.com/superbrothers/kubectl-open-svc-plugin/releases/download/v2.4.1/kubectl-open_svc-windows-amd64.zip"
+    sha256: "a4991b89971570f44e863eb1aecd1556ed6c8eb77ec79812318187b788422028"
+    bin: kubectl-open_svc.exe
+    files:
+    - from: kubectl-open_svc.exe
+      to: .
+    - from: LICENSE
+      to: .
+    selector:
+      matchLabels:
+        os: windows
+        arch: amd64
+  version: "v2.4.1"
+  shortDescription: Open the Kubernetes URL(s) for the specified service in your browser.
+  description: |
+    Open the Kubernetes URL(s) for the specified service in your browser.
+    Unlike the `kubectl port-forward` command, this plugin makes services
+    accessible via their ClusterIP.
+  homepage: https://github.com/superbrothers/kubectl-open-svc-plugin

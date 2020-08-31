@@ -1,0 +1,40 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: change-ns
+spec:
+  platforms:
+  - uri: https://github.com/juanvallejo/kubectl-ns/releases/download/v1.0.0/kubectl-ns_darwin_x86_64.zip 
+    sha256: 137875211f7e5d8f69ec622c00281f967f8504072e3669cfc112454cfcd6467b
+    bin: kubectl-ns
+    files:
+    - from: "*"
+      to: "."
+    selector:
+      matchLabels:
+        os: darwin
+        arch: amd64
+  - uri: https://github.com/juanvallejo/kubectl-ns/releases/download/v1.0.0/kubectl-ns_linux_x86_64.zip 
+    sha256: afbb3278d21b3e3ad540de6e6022d802352758d69dbf2d9a43828b2b8e43ef07
+    bin: kubectl-ns
+    files:
+    - from: "*"
+      to: "."
+    selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+  - uri: https://github.com/juanvallejo/kubectl-ns/releases/download/v1.0.0/kubectl-ns_windows_x86_64.zip 
+    sha256: cb81a2fb2dd22b91a99852d246b64d82211506aaa1cbdfba4a051ef5084e52ab
+    bin: kubectl-ns.exe
+    files:
+    - from: "*"
+      to: "."
+    selector:
+      matchLabels:
+        os: windows
+        arch: amd64
+  version: v1.0.0
+  homepage: https://github.com/juanvallejo/kubectl-ns
+  shortDescription: View or change the current namespace via kubectl.
+  description: View or change the current namespace in your KUBECONFIG file. Honors global config flags found in kubectl, such as `--user`, `--cluster`, `--context`, and `--namespace`.
