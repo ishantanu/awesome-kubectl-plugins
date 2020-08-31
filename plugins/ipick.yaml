@@ -1,0 +1,34 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: ipick
+spec:
+  version: v1.0.8
+  homepage: https://github.com/similarweb/kubectl-ipick
+  shortDescription: A kubectl wrapper for interactive resource selection.
+  description: |
+    This plugin is a smart wrapper around kubectl, which lets you pick 
+    the resource to act on. For example, `kubectl ipick exec` will
+    show a list of pods and execute `kubectl exec <selected-pod>`.
+  platforms:
+  - selector:
+      matchLabels:
+        os: darwin
+        arch: amd64
+    uri: https://github.com/similarweb/kubectl-ipick/releases/download/v1.0.8/kubectl-ipick_v1.0.8_Darwin_x86_64.tar.gz
+    sha256: 2fdecf5896cd05b7e387ff7079999aa283ded44b20af3449e9fcd66723ab3fe1
+    bin: kubectl-ipick
+  - selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+    uri: https://github.com/similarweb/kubectl-ipick/releases/download/v1.0.8/kubectl-ipick_v1.0.8_Linux_x86_64.tar.gz
+    sha256: 4c7fea4cc86012bf320e18f4e4e080c451910c0b44bee5d6058a4edb10b3738f
+    bin: kubectl-ipick
+  - selector:
+      matchLabels:
+        os: windows
+        arch: amd64
+    uri: https://github.com/similarweb/kubectl-ipick/releases/download/v1.0.8/kubectl-ipick_v1.0.8_Windows_x86_64.tar.gz
+    sha256: 25ffac8839c71a03c4a6e024e44c69385cd8c2f0cdb522bc46a73c95592820fc    
+    bin: kubectl-ipick.exe

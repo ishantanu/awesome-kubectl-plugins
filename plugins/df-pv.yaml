@@ -1,0 +1,47 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: df-pv
+spec:
+  version: v0.2.7
+  platforms:
+  - selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+    uri: https://github.com/yashbhutwala/kubectl-df-pv/releases/download/v0.2.7/kubectl-df-pv_v0.2.7_linux_amd64.tar.gz
+    sha256: 40388f2d0f8fad43ca2028f677400c71abc6dcb27a8bbc055d8a26461364285b
+    files:
+    - from: "df-pv"
+      to: "."
+    - from: "LICENSE"
+      to: "."
+    bin: "df-pv"
+  - selector:
+      matchLabels:
+        os: darwin
+        arch: amd64
+    uri: https://github.com/yashbhutwala/kubectl-df-pv/releases/download/v0.2.7/kubectl-df-pv_v0.2.7_darwin_amd64.tar.gz
+    sha256: 50a98077524ecfe03151e78e43422836daec999efab4cfbc0dbae33f1bc3866d
+    files:
+    - from: "df-pv"
+      to: "."
+    - from: "LICENSE"
+      to: "."
+    bin: "df-pv"
+  - selector:
+      matchLabels:
+        os: windows
+        arch: amd64
+    uri: https://github.com/yashbhutwala/kubectl-df-pv/releases/download/v0.2.7/kubectl-df-pv_v0.2.7_windows_amd64.zip
+    sha256: a0cd58b51a9aecfd7efc6b010bd3e4774b3c0b5192675c1b0f82535e2b9225af
+    files:
+    - from: "df-pv.exe"
+      to: "."
+    - from: "LICENSE"
+      to: "."
+    bin: "df-pv.exe"
+  shortDescription: Show disk usage (like unix df) for persistent volumes
+  homepage: https://github.com/yashbhutwala/kubectl-df-pv
+  description: |
+    This plugin emulates Unix style df for persistent volumes.

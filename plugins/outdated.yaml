@@ -1,0 +1,58 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: outdated
+spec:
+  version: "v0.3.3"
+  platforms:
+  - selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+    uri: https://github.com/replicatedhq/outdated/releases/download/v0.3.3/outdated_linux_amd64.tar.gz
+    sha256: "65bca2e20a771c8f83961e12ec6e3dffa951bf04ac398cf5b3259bed52f2959e"
+    files:
+    - from: outdated
+      to: .
+    - from: LICENSE
+      to: .
+    bin: outdated
+  - selector:
+      matchLabels:
+        os: darwin
+        arch: amd64
+    uri: https://github.com/replicatedhq/outdated/releases/download/v0.3.3/outdated_darwin_amd64.tar.gz
+    sha256: "d3391f39ba8a6d1dcd18669fa89fce2ebc784136907398e0b57ef90079370a3d"
+    files:
+    - from: outdated
+      to: .
+    - from: LICENSE
+      to: .
+    bin: outdated
+  - selector:
+      matchLabels:
+        os: windows
+        arch: amd64
+    uri: https://github.com/replicatedhq/outdated/releases/download/v0.3.3/outdated_windows_amd64.zip
+    sha256: "b056348d87b7fcd82271a9cbbbe95a046e30111e711d231be75a037543aecd86"
+    files:
+    - from: outdated.exe
+      to: .
+    - from: LICENSE
+      to: .
+    bin: outdated.exe
+  shortDescription: Finds outdated container images running in a cluster
+  homepage: https://github.com/replicatedhq/outdated
+  description: |
+    The plugin will scan for all pods in all namespaces that you have at least
+    read access to. It will then connect to the registry that hosts the image,
+    and (if there's permission), it will analyze your tag to the list of
+    current tags.
+
+    The output is a list of all images, with the most out-of-date images in red,
+    slightly outdated in yellow, and up-to-date in green.
+
+    For additional options:
+      $ kubectl outdated --help
+      or https://github.com/replicatedhq/outdated/blob/master/doc/USAGE.md
+

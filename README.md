@@ -30,6 +30,31 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 * [Manage Kubernetes Plugins with Krew](https://thepracticalsysadmin.com/manage-kubernetes-plugins-with-krew/)
 * [Boosting Your Kubectl Productivity](https://learnk8s.io/blog/kubectl-productivity/)
 
+## Use `awesome-kubectl-plugins` as a Custom Index via Krew
+
+A notable feature `custom index` was added in `krew's` [v0.4.0](https://github.com/kubernetes-sigs/krew/releases/tag/v0.4.0) release. This means you can now use custom indexes of your own to install the plugins via `krew`.
+
+Was you plugin not accepted in default `krew-index` due to some reasons? No issues, you can still use that plugin manifest in your custom index and install it via krew. 
+
+Now, `awesome-kubectl-plugins` is not just a list of awesome kubectl plugins (without any centralised control), you can actually use this to add your own plugins like you did for `krew-index` and install them locally. :rocket:
+
+**Note**: This does not mean you can install plugins without a valid `plugins.yaml` for your plugin. You still need to have a plugin manifest. 
+
+### How to add your plugin to awesome-kubectl-plugins
+* Add your plugin's name, description and category to the below [kubectl Plugins](#kubectl-plugins) list.
+* Add `plugin-name.yaml` manifest to `./plugins` directory.
+* And, you're done.
+ 
+### Installing plugins via awesome-kubectl-plugins
+* Add the custom index to krew:
+  ```
+  $ kubectl krew index add awesome-kubectl-plugins https://github.com/ishantanu/awesome-kubectl-plugins.git
+  ```
+* Install a plugin from the custom index by running:
+  ```
+  kubectl krew install awesome-kubectl-plugins/access-matrix
+  ```
+  
 ## kubectl Plugins
 
 | No. | Plugin                                                            | Description                                                                             | Category |
@@ -39,8 +64,8 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 | 3   | [kubectl-lint](https://github.com/SethCurry/kubectl-lint)                          | A kubectl plugin to perform linting                                                              | Linting             |
 | 4   | [kubectl-neat](https://github.com/itaysk/kubectl-neat)                             | Clean up Kuberntes yaml and json output to make it readable                              | Linting             |
 | 5   | [ksort](https://github.com/superbrothers/ksort)                                    | Sort manifest files in a proper order by Kind                                                 | Linting             |
-| 6   | [kubectl-debug](https://github.com/aylei/kubectl-debug)                            | Debug your pod by a new container with every troubleshooting tools pre-installed               | Debugging           | 
-| 7   | [kube-profefe](https://github.com/profefe/kube-profefe)                            | continuous profiling made easy in Kubernetes with profefe                                  | Debugging           | 
+| 6   | [kubectl-debug](https://github.com/aylei/kubectl-debug)                            | Debug your pod by a new container with every troubleshooting tools pre-installed               | Debugging           |
+| 7   | [kube-profefe](https://github.com/profefe/kube-profefe)                            | continuous profiling made easy in Kubernetes with profefe                                  | Debugging           |
 | 8   | [ksniff](https://github.com/eldadru/ksniff)                                        | Kubectl plugin to ease sniffing on kubernetes pods using tcpdump and wireshark                 | Networking          |
 | 9   | [kubectl-swiftnp](https://github.com/bmuschko/kubectl-swiftnp)                     | A kubectl plugin for rendering details of Network Policies.                                      | Networking          |
 | 10  | [kubectl-trace](https://github.com/iovisor/kubectl-trace)                          | Schedule bpftrace programs on your kubernetes cluster using the kubectl                  | Networking          |
@@ -98,8 +123,8 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 | 62  | [kubectl-all](https://github.com/kajanth/kubectl-all)                               | kubectl plugin to list all resources in given namespace                                        | Resource CRUDs         |
 | 63  | [kubectl-watch](https://github.com/lee0c/kubectl-watch)                              | Watches Kubernetes resources                                                            | Resource CRUDs         |
 | 64  | [kubectl-custom-cols](https://github.com/webofmars/kubectl-custom-cols)              | a kubectl plugin that help you customize output columns like a boss !                     | Resource CRUDs         |
-| 65  | [kubepod](https://github.com/karancode/kubepod)                                     | Search pods faster in kubectl                                                               | Resource CRUDs         | 
-| 66  | [kubectl-resources](https://github.com/howardjohn/kubectl-resources)                | Plugin to access Kubernetes resource requests, limits, and usage.                         | Resource CRUDs         | 
+| 65  | [kubepod](https://github.com/karancode/kubepod)                                     | Search pods faster in kubectl                                                               | Resource CRUDs         |
+| 66  | [kubectl-resources](https://github.com/howardjohn/kubectl-resources)                | Plugin to access Kubernetes resource requests, limits, and usage.                         | Resource CRUDs         |
 | 67  | [kubectl-free](https://github.com/makocchi-git/kubectl-free)                         | Show various requested resources on Kubernetes nodes                                         | Resource CRUDs         |
 | 68  | [kubectl-match-name](https://github.com/gerald1248/kubectl-match-name)               | regex matching for resource names                                                              | Resource CRUDs         |
 | 69  | [kubectl-eksporter](https://github.com/Kyrremann/kubectl-eksporter)               | A simple Ruby-script to export k8s resources                                             | Resource CRUDs         |
@@ -128,7 +153,7 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 | 92  | [kubectl preflight](https://github.com/replicatedhq/troubleshoot)                    | Preflight Checks and Support Bundles Framework for Kubernetes Applications https://troubleshoot.sh  | Uncategorized          |
 | 93  | [kubectl support-bundle](https://github.com/replicatedhq/troubleshoot)               | Preflight Checks and Support Bundles Framework for Kubernetes Applications https://troubleshoot.sh  | Uncategorized          |
 | 94  | [kubectl-virt-plugin](https://github.com/kubevirt/kubectl-virt-plugin)               | Holds all scripts to create packages and manifest file required for publishing the virtctl binary as a krew package for kubectl.  | Uncategorized          |
-| 95  | [kcf](https://github.com/kubectl-plus/kcf)                                           | A CLI tool providing you with status & configuration of a Kubernetes cluster fleet       | Uncategorized          | 
+| 95  | [kcf](https://github.com/kubectl-plus/kcf)                                           | A CLI tool providing you with status & configuration of a Kubernetes cluster fleet       | Uncategorized          |
 | 96  | [kubepug](https://github.com/rikatz/kubepug)                                         | Kubernetes PreUpGrade (Checker)                                                          | Uncategorized          |
 | 97  | [kubectl view-secret](https://github.com/elsesiy/kubectl-view-secret)                                         | Decode Kubernetes secrets                                                      | Secrets |
 | 98  | [kubectl-cilium](https://github.com/bmcustodio/kubectl-cilium)                     | A kubectl plugin for interacting with Cilium.                                                    | Networking

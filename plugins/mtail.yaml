@@ -1,0 +1,23 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: mtail
+spec:
+  platforms:
+  - sha256: d4c57d99e8bb255bb0c1c6cfc5eb12dba5d03f35ec5552112288a22b304fd31c
+    uri: https://gitlab.com/grzesuav/kubectl-mtail/uploads/4f872d0e01711d5a874c0bc9de1b611e/mtail.tar.gz
+    bin: mtail.sh
+    files:
+    - from: "mtail/*"
+      to: "."
+    - from: "LICENSE"
+      to: "."
+    selector:
+      matchExpressions:
+      - {key: os, operator: In, values: [darwin, linux]}
+  version: "v1.2.0"
+  homepage: https://gitlab.com/grzesuav/kubectl-mtail
+  shortDescription: Tail logs from multiple pods matching label selector
+  caveats: |
+    This plugin needs the following programs:
+    * jq

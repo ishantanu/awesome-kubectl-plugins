@@ -1,0 +1,46 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: debug
+spec:
+  version: v0.1.2
+  platforms:
+  - selector:
+      matchLabels:
+        os: darwin
+        arch: amd64
+    uri: https://github.com/verb/kubectl-debug/releases/download/v0.1.2/kubectl-debug_darwin_amd64.tar.gz
+    sha256: "e8c6ce28b0eaec9aff17dc3b4c569ef3e731cad00673423d82524bd4d5c829ab"
+    bin: ./kubectl-debug
+  - selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+    uri: https://github.com/verb/kubectl-debug/releases/download/v0.1.2/kubectl-debug_linux_amd64.tar.gz
+    sha256: "99e1bc8b7a5170a42369858d197de83e6864afb6a4ceec8e74241e6d4c92d8c5"
+    bin: ./kubectl-debug
+  - selector:
+      matchLabels:
+        os: windows
+        arch: amd64
+    uri: https://github.com/verb/kubectl-debug/releases/download/v0.1.2/kubectl-debug_windows_amd64.zip
+    sha256: "31fb5bc8e3a0f6ec72f3dac693c5cb2177027e7d614ef083b4f0a3586426c98f"
+    bin: ./kubectl-debug.exe
+  shortDescription: Attach ephemeral debug container to running pod
+  homepage: https://github.com/verb/kubectl-debug
+  caveats: |
+    This plugin requires the alpha EphemeralContainers feature to be enabled in the cluster.
+    See https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/ for
+    enabling features.
+  description: |
+    This plugin attaches an Ephemeral Container to a running pod for use as an interactive
+    debugging session. For example, to run busybox in the running pod "mypod":
+    
+      # kubectl debug mypod --attach
+    
+    See `kubectl debug --help` for additional examples and usage instructions.
+    
+    For more information on Ephemeral Containers, and to understand their limitations, see
+    https://kubernetes.io/docs/concepts/workloads/pods/ephemeral-containers/
+    
+    See https://bit.ly/kubectl-debug-demo for a demonstration of this plugin.

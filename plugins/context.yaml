@@ -1,0 +1,28 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: context
+spec:
+  version: "v0.0.1"
+  homepage: https://github.com/stefanm8/kubectl-select-context
+  shortDescription: "Simpler way of viewing and selecting contexts"
+  description: |
+    Displays contexts, when given a argument it searches across contexts
+    and switch to the found context.
+  platforms:
+  - selector:
+      matchExpressions:
+      - key: "os"
+        operator: "In"
+        values:
+        - darwin
+        - linux
+    uri: https://github.com/stefanm8/kubectl-select-context/archive/0.0.1.zip
+    # 'sha256' is the sha256sum of the url above
+    sha256: b782d65d10f492d9830221131756cbb845c5fa61639e9ac8273924a01d860221
+    # 'files' lists which files should be extracted out from downloaded archive
+    files:
+    - from: "/kubectl-select-context-0.0.1/*"
+      to: "."
+    # 'bin' specifies the path to the the plugin executable among extracted files
+    bin: kubectl-context

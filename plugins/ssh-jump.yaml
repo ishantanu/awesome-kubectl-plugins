@@ -1,0 +1,30 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: ssh-jump
+spec:
+  version: "v0.4.0"
+  homepage: https://github.com/yokawasa/kubectl-plugin-ssh-jump
+  platforms:
+  - selector:
+      matchExpressions:
+      - {key: os, operator: In, values: [darwin, linux]}
+    uri: https://github.com/yokawasa/kubectl-plugin-ssh-jump/archive/0.4.0.zip
+    sha256: "8f5e831e879777ba12134133a436ab7373d7dac6a61d78e28e6a1d185d416ff1"
+    files:
+    - from: "./*/kubectl-ssh-jump"
+      to: .
+    - from: "./*/LICENSE"
+      to: .
+    bin: "./kubectl-ssh-jump"
+  shortDescription: A kubectl plugin to SSH into Kubernetes nodes using a SSH jump host Pod
+  caveats: |
+    This plugin needs the following programs:
+    * ssh(1)
+    * ssh-agent(1)
+
+    Please follow the documentation: https://github.com/yokawasa/kubectl-plugin-ssh-jump
+  description: |
+    A kubectl plugin to SSH into Kubernetes nodes using a SSH jump host Pod.
+    A jump host Pod is an intermediary Pod or an SSH gateway to Kubernetes
+    node machines, through which a connection can be made to the node machines.

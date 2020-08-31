@@ -1,0 +1,43 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: node-shell
+spec:
+  version: "v1.2.0"
+  homepage: https://github.com/kvaps/kubectl-node-shell
+  shortDescription: Spawn a root shell on a node via kubectl 
+  description: |
+    Start a root shell in the node's host OS running.
+    You need to be able to start privileged containers for that.
+
+    Usage:
+
+      Get standard bash shell:
+      $ kubectl node-shell <node>
+      
+      Execute custom command:
+      $ kubectl node-shell <node> -- echo 123
+      
+      Use stdin:
+      $ cat /etc/passwd | kubectl node-shell <node> -- sh -c 'cat > /tmp/passwd'
+      
+      Run oneliner script:
+      $ kubectl node-shell <node> -- sh -c 'cat /tmp/passwd; rm -f /tmp/passwd'
+  caveats: |
+      You need to be allowed to start privileged pods in the cluster
+  platforms:
+  - selector:
+      matchExpressions:
+      - key: os
+        operator: In
+        values:
+        - darwin
+        - linux
+    uri: https://github.com/kvaps/kubectl-node-shell/archive/v1.2.0.tar.gz
+    sha256: "5a6a2d656014546a6ea69e09b89feb6830c85cd5758a0eaa56002586e2b06f1a"
+    files:
+    - from: kubectl-node-shell-*/kubectl-node_shell
+      to: .
+    - from: kubectl-node-shell-*/LICENSE
+      to: .
+    bin: "kubectl-node_shell"

@@ -1,0 +1,56 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: fleet
+spec:
+  version: v0.1.10
+  platforms:
+  - selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+    uri: https://github.com/kubectl-plus/kcf/releases/download/v0.1.10/fleet_linux_amd64.tar.gz
+    sha256: a9af05fc56814da8aad54e04b58ae9768787e38f74a10432b2c36ef5f9846f7c
+    files:
+    - from: "./fleet"
+      to: "."
+    - from: "./LICENSE"
+      to: "."
+    bin: "fleet"
+  - selector:
+      matchLabels:
+        os: darwin
+        arch: amd64
+    uri: https://github.com/kubectl-plus/kcf/releases/download/v0.1.10/fleet_darwin_amd64.tar.gz
+    sha256: 0697bfd0195c8bfda46c052f215865571b14ce47f05b34d18d9f7d2f53b22e1b
+    files:
+    - from: "./fleet"
+      to: "."
+    - from: "./LICENSE"
+      to: "."
+    bin: "fleet"
+  - selector:
+      matchLabels:
+        os: windows
+        arch: amd64
+    uri: https://github.com/kubectl-plus/kcf/releases/download/v0.1.10/fleet_windows_amd64.zip
+    sha256: 4bb580d2b97e879a3d0e0f37f781594bc2eac0c320bff8265ca186b74b276de4
+    files:
+    - from: "/fleet.exe"
+      to: "."
+    - from: "./LICENSE"
+      to: "."
+    bin: "fleet.exe"
+  shortDescription: Shows config and resources of a fleet of clusters
+  homepage: https://github.com/kubectl-plus/kcf
+  description: |
+    Allows to get an overview and details on a fleet of Kubernetes clusters.
+    The top-level command lists all active clusters found in the kubeconfig provided.
+    For each cluster, configuration info such as the control plane version or 
+    API server endpoint are displayed, as well as select stats, for example, 
+    the number of worker nodes or namespaces found in the cluster.
+
+    For additional options:
+      $ kubectl fleet --help
+      or https://github.com/kubectl-plus/kcf/blob/v0.1.4/doc/USAGE.md
+

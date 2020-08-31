@@ -1,0 +1,25 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: sudo
+spec:
+  version: "v1.0.1"
+  homepage: https://github.com/postfinance/kubectl-sudo
+  platforms:
+  - selector:
+      matchExpressions:
+      - {key: os, operator: In, values: [darwin, linux]}
+    uri: https://github.com/postfinance/kubectl-sudo/archive/v1.0.1.tar.gz
+    sha256: "65d8e7ba2e8357c09905b7c02d72041aa5ac3f3209abfdd00bdb34b7fb9ef2fa"
+    files:
+    - from: "./*/bash/*"
+      to: .
+    - from: "./*/LICENSE.md"
+      to: .
+    bin: kubectl-sudo
+  shortDescription: Run Kubernetes commands impersonated as group system:masters
+  caveats: |
+    Follow https://github.com/postfinance/kubectl-sudo/blob/master/README.md
+    in order to configure your Kubernetes cluster to allow impersonations.
+  description: |
+    This plugin wraps kubectl commands to impersonate as user $USER and group system:masters.

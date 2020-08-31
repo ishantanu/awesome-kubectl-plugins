@@ -1,0 +1,65 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: topology
+spec:
+  version: v0.1.1
+  shortDescription: Explore region topology for nodes or pods
+  homepage: https://github.com/bmcustodio/kubectl-topology
+  description: |
+    Provides insight into the topology of a Kubernetes cluster (i.e. into the
+    distribution of nodes and pods per region and zone).
+
+    NOTE: Requires nodes to be adequately labeled with the
+    'topology.kubernetes.io/{region,zone}' labels or their deprecated
+    equivalents, 'failure-domain.beta.kubernetes.io/{region,zone}'.
+
+    # List all pods across all namespaces and the zones and regions they are in.
+    $ kubectl-topology pod --all-namespaces
+    NAMESPACE     NAME                                     NODE                          REGION         ZONE
+    kube-system   kube-dns-5f886bf8d8-s7pcc                gke-gke-1-p-1-50120dfc-26gm   europe-west1   europe-west1-d
+    kube-system   kube-dns-5f886bf8d8-zhm42                gke-gke-1-p-1-8e1077f6-17st   europe-west1   europe-west1-b
+    kube-system   kube-dns-autoscaler-8687c64fc-d5jvm      gke-gke-1-p-1-8e1077f6-17st   europe-west1   europe-west1-b
+    kube-system   kube-proxy-gke-gke-1-p-1-50120dfc-26gm   gke-gke-1-p-1-50120dfc-26gm   europe-west1   europe-west1-d
+    kube-system   kube-proxy-gke-gke-1-p-1-7023cbca-cz4b   gke-gke-1-p-1-7023cbca-cz4b   europe-west1   europe-west1-c
+    kube-system   kube-proxy-gke-gke-1-p-1-8e1077f6-17st   gke-gke-1-p-1-8e1077f6-17st   europe-west1   europe-west1-b
+    kube-system   l7-default-backend-8f479dd9-dkspg        gke-gke-1-p-1-50120dfc-26gm   europe-west1   europe-west1-d
+    kube-system   metrics-server-v0.3.1-5c6fbf777-z7jxq    gke-gke-1-p-1-8e1077f6-17st   europe-west1   europe-west1-b
+    ns-1          nginx                                    gke-gke-1-p-1-7023cbca-cz4b   europe-west1   europe-west1-c
+  platforms:
+  - selector:
+      matchLabels:
+        os: darwin
+        arch: amd64
+    uri: https://github.com/bmcustodio/kubectl-topology/releases/download/v0.1.1/kubectl-topology_v0.1.1_darwin_amd64.tar.gz
+    sha256: "a8c9740329481dcff64a93697820bdef375d4fbc30cfe8df2869df948e923f0d"
+    files:
+    - from: kubectl-topology
+      to: .
+    - from: LICENSE
+      to: .
+    bin: kubectl-topology
+  - selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+    uri: https://github.com/bmcustodio/kubectl-topology/releases/download/v0.1.1/kubectl-topology_v0.1.1_linux_amd64.tar.gz
+    sha256: "3aa1ecd9ab4c13e9f1bc88f1a171bd28835863c4abfd038756e5ca39bd6929af"
+    files:
+    - from: kubectl-topology
+      to: .
+    - from: LICENSE
+      to: .
+    bin: kubectl-topology
+  - selector:
+      matchLabels:
+        os: windows
+        arch: amd64
+    uri: https://github.com/bmcustodio/kubectl-topology/releases/download/v0.1.1/kubectl-topology_v0.1.1_windows_amd64.tar.gz
+    sha256: "545dbc904ef25388621ca12b080aa174fd6c724f62443490aa30515152dcd4ab"
+    files:
+    - from: kubectl-topology.exe
+      to: .
+    - from: LICENSE
+      to: .
+    bin: kubectl-topology.exe
