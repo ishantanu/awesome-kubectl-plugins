@@ -156,6 +156,7 @@ Now, `awesome-kubectl-plugins` is not just a list of awesome kubectl plugins (wi
 | 95  | [kubepug](https://github.com/rikatz/kubepug)                                         | Kubernetes PreUpGrade (Checker)                                                          | Uncategorized          |
 | 96  | [kubectl view-secret](https://github.com/elsesiy/kubectl-view-secret)                                         | Decode Kubernetes secrets                                                      | Secrets |
 | 97  | [kubectl-cilium](https://github.com/bmcustodio/kubectl-cilium)                     | A kubectl plugin for interacting with Cilium.                                                    | Networking
+| 98  | [kubectl-carbonetes-scan](https://github.com/carbonetes/kubectl-carbonetes-scan)   | Integrates container analysis directly into your cluster. | Container Security |
 
 ### Collection of kubectl plugins
 
