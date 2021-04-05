@@ -158,6 +158,7 @@ Now, `awesome-kubectl-plugins` is not just a list of awesome kubectl plugins (wi
 | 97  | [kubectl-cilium](https://github.com/bmcustodio/kubectl-cilium)                     | A kubectl plugin for interacting with Cilium.                                                    | Networking
 | 98  | [kubectl-carbonetes-scan](https://github.com/carbonetes/kubectl-carbonetes-scan)   | Integrates container analysis directly into your cluster. | Container Security |
 | 99  | [kubectl-cyclonus](https://github.com/mattfenwick/kubectl-cyclonus)                     | Analyze, explain, and probe network policies.                                                    | Networking |
+| 100  | [kubectl-view-webhook](https://github.com/Trendyol/kubectl-view-webhook)           | Visualize your webhook configurations                                                                | Visibility |
 
 ### Collection of kubectl plugins
 
