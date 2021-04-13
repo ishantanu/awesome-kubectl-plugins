@@ -1,0 +1,32 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: translate
+spec:
+  version: v0.2.0-alpha.5
+  homepage: https://move2kube.konveyor.io/
+  shortDescription: Migrate your application to run on Kubernetes
+  description: |
+    Translate creates all the resources required for deploying your application to Kubernetes, including containerization and Kubernetes resources.
+    It supports translating from Docker Swarm/Docker Compose, Cloud Foundry apps and even other non-containerized applications.
+    This plugin contains a subset of the features of a more flexible CLI tool called Move2Kube https://github.com/konveyor/move2kube
+    For more documentation and support for this plugin and Move2Kube, visit https://move2kube.konveyor.io/
+  caveats: |
+    * Optional dependencies:
+      - docker
+      - operator-sdk
+  platforms:
+    - selector:
+        matchLabels:
+          os: darwin
+          arch: amd64
+      uri: https://github.com/konveyor/move2kube/releases/download/v0.2.0-alpha.5/kubectl-translate-v0.2.0-alpha.5-darwin-amd64.tar.gz
+      sha256: f017ca365e296ed2ce7bc814f8b0572ff1ec051dda83216b836ef4dac3f0e684
+      bin: kubectl-translate/kubectl-translate
+    - selector:
+        matchLabels:
+          os: linux
+          arch: amd64
+      uri: https://github.com/konveyor/move2kube/releases/download/v0.2.0-alpha.5/kubectl-translate-v0.2.0-alpha.5-linux-amd64.tar.gz
+      sha256: 76d961b4e6af828d8d841e7c35b59df1a2ab8f2c5cb8ca6f47fb4078e5822a7a
+      bin: kubectl-translate/kubectl-translate
