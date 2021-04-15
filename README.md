@@ -161,6 +161,8 @@ Now, `awesome-kubectl-plugins` is not just a list of awesome kubectl plugins (wi
 | 100  | [kubectl-view-webhook](https://github.com/Trendyol/kubectl-view-webhook)           | Visualize your webhook configurations                                                                | Visibility |
 | 101  | [kubectl-translate](https://github.com/konveyor/move2kube)           | Helps migrate your app to run on Kubernetes. Generates K8s yamls, Helm chart, Operator, CI/CD pipeline, Kustomize overlays, etc.                                                                | Migration |
 
+* [kubebox](https://github.com/astefanutti/kubebox) - Terminal and Web console for Kubernetes
+
 ### Collection of kubectl plugins
 
 * [collection of kubectl plugins](https://github.com/jordanwilson230/kubectl-plugins) - A Collection of Plugins for kubectl Integration (context switching, ssh / exec as any user, etc).
