@@ -5,7 +5,7 @@ metadata:
 spec:
   homepage: https://github.com/carbonetes/kubectl-carbonetes-scan
   shortDescription: Integrates container analysis directly into your cluster.
-  version: v1.1.0
+  version: v1.1.1
   description: |
     Provides complete container analysis and
     policy evaluation as a fully managed service.
@@ -24,8 +24,8 @@ spec:
         values:
         - darwin
         - linux
-    uri: https://github.com/carbonetes/kubectl-carbonetes-scan/archive/refs/tags/v1.1.0.tar.gz
-    sha256: bae6b9596cdc6bd335dcbf04bb7b4c09506c82e1a4e193f1ed25c2b850af86a4
+    uri: https://github.com/carbonetes/kubectl-carbonetes-scan/archive/refs/tags/v1.1.1.tar.gz
+    sha256: a1db3a3b4b3da1d95e11e441b57ab60a112c4db6f2e08632355340856e40b222
     bin: kubectl-carbonetes-scan
     files:
     - from: kubectl-carbonetes-scan-*/kubectl-carbonetes-scan
