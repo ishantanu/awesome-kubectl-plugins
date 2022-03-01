@@ -160,6 +160,7 @@ Now, `awesome-kubectl-plugins` is not just a list of awesome kubectl plugins (wi
 | 99  | [kubectl-cyclonus](https://github.com/mattfenwick/kubectl-cyclonus)                     | Analyze, explain, and probe network policies.                                                    | Networking |
 | 100  | [kubectl-view-webhook](https://github.com/Trendyol/kubectl-view-webhook)           | Visualize your webhook configurations                                                                | Visibility |
 | 101  | [kubectl-translate](https://github.com/konveyor/move2kube)           | Helps migrate your app to run on Kubernetes. Generates K8s yamls, Helm chart, Operator, CI/CD pipeline, Kustomize overlays, etc.                                                                | Migration |
+| 102 | [kubectl-datree](https://github.com/datreeio/kubectl-datree) | Scan resources within your cluster for misconfigurations | Misconfiguration Detection |
 
 ### Collection of kubectl plugins
 
