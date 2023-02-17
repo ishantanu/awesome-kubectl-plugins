@@ -164,6 +164,8 @@ Now, `awesome-kubectl-plugins` is not just a list of awesome kubectl plugins (wi
 | 102 | [kubectl-datree](https://github.com/datreeio/kubectl-datree) | Scan resources within your cluster for misconfigurations | Misconfiguration Detection |
 | 103 | [kubectl-irsa](https://github.com/WoodProgrammer/kubectl-irsa) | Check the IAM capabilities of the serviceaccounts via AWS PolicySimulator | Security |
 
+* [kubebox](https://github.com/astefanutti/kubebox) - Terminal and Web console for Kubernetes
+
 ### Collection of kubectl plugins
 
 * [collection of kubectl plugins](https://github.com/jordanwilson230/kubectl-plugins) - A Collection of Plugins for kubectl Integration (context switching, ssh / exec as any user, etc).
