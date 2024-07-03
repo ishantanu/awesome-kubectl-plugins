@@ -1,0 +1,54 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: duplicate
+spec:
+  version: v0.1.0
+  homepage: https://github.com/Telemaco019/duplik8s
+  shortDescription: Duplicate Pods in a Kubernetes cluster.
+  description: |
+    This plugin makes it super easy to duplicate Kubernetes Pods with overridden commands and configurations. 
+    It's similar to `kubectl debug --copy-to`, but with more features and flexibility.
+  platforms:
+    - selector:
+        matchLabels:
+          os: darwin
+          arch: amd64
+      uri: https://github.com/Telemaco019/duplik8s/releases/download/v0.1.0/duplik8s_Darwin_x86_64.tar.gz
+      sha256: c360c83ff7df9d073b7b5c492cda219ccdc3240b1e0ad17d5ad517cd98c902fe
+      bin: duplik8s
+    - selector:
+        matchLabels:
+          os: darwin
+          arch: arm64
+      uri: https://github.com/Telemaco019/duplik8s/releases/download/v0.1.0/duplik8s_Darwin_arm64.tar.gz
+      sha256: 571f4a1285876491c2ed94b88b092e3c99963c7e36348a351fa81e90a6f99b04
+      bin: duplik8s
+    - selector:
+        matchLabels:
+          os: linux
+          arch: amd64
+      uri: https://github.com/Telemaco019/duplik8s/releases/download/v0.1.0/duplik8s_Linux_x86_64.tar.gz
+      sha256: 0e06ccdfe584d4a2f66f7825f6984c072a577994687de8c08e9d19c555c750dd
+      bin: duplik8s
+    - selector:
+        matchLabels:
+          os: linux
+          arch: arm64
+      uri: https://github.com/Telemaco019/duplik8s/releases/download/v0.1.0/duplik8s_Linux_arm64.tar.gz
+      sha256: b558ddb50152fe2cfb44677b3a637ef92fa588f40dd67c7fdf5648b4fe41801b
+      bin: duplik8s
+    - selector:
+        matchLabels:
+          os: windows
+          arch: amd64
+      uri: https://github.com/Telemaco019/duplik8s/releases/download/v0.1.0/duplik8s_Windows_x86_64.zip
+      sha256: 8a286d6620c9506db1ba2782ed851a2c91a735ba9ce7f78314f72da7d09fdb3e
+      bin: duplik8s.exe
+    - selector:
+        matchLabels:
+          os: windows
+          arch: arm64
+      uri: https://github.com/Telemaco019/duplik8s/releases/download/v0.1.0/duplik8s_Windows_arm64.zip
+      sha256: b31784627811dea521fa7a533e1f629e3b7887e32e8170208916145357cbef20
+      bin: duplik8s.exe
