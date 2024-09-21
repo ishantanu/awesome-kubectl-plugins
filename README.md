@@ -161,6 +161,7 @@ Now, `awesome-kubectl-plugins` is not just a list of awesome kubectl plugins (wi
 | 99  | [kubectl-translate](https://github.com/konveyor/move2kube)           | Helps migrate your app to run on Kubernetes. Generates K8s yamls, Helm chart, Operator, CI/CD pipeline, Kustomize overlays, etc.                                                                | Migration |
 | 100 | [kubectl-datree](https://github.com/datreeio/kubectl-datree) | Scan resources within your cluster for misconfigurations | Misconfiguration Detection |
 | 101 | [kubectl-irsa](https://github.com/WoodProgrammer/kubectl-irsa) | Check the IAM capabilities of the serviceaccounts via AWS PolicySimulator | Security |
+| 102 | [kubectl-config-doctor](https://github.com/aptakube/kubectl-config-doctor) | Validate and test common mistakes in kubeconfigs | Linting |
 
 ### Collection of kubectl plugins
 
