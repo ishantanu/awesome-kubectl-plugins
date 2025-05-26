@@ -39,7 +39,7 @@ spec:
         - from: kubectl-tks
           to: .
         - from: sequences.json
-          to: ~/.tks/sequences.json
+          to: . 
       bin: kubectl-tks
     - selector:
         matchLabels:
@@ -51,7 +51,7 @@ spec:
         - from: kubectl-tks
           to: .
         - from: sequences.json
-          to: ~/.tks/sequences.json
+          to: .
       bin: kubectl-tks
     - selector:
         matchLabels:
@@ -63,7 +63,7 @@ spec:
         - from: kubectl-tks
           to: .
         - from: sequences.json
-          to: ~/.tks/sequences.json
+          to: .
       bin: kubectl-tks
     - selector:
         matchLabels:
@@ -75,5 +75,5 @@ spec:
         - from: kubectl-tks
           to: .
         - from: sequences.json
-          to: ~/.tks/sequences.json
+          to: .
       bin: kubectl-tks
