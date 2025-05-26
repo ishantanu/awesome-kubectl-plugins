@@ -1,0 +1,79 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: tks
+spec:
+  version: "v0.8.0"
+  homepage: https://github.com/comboshreddies/kubectl-tks
+  shortDescription: tmux kubernetes scripts
+  description: |+2
+    # runs scripts on selected  pods within tmux
+
+    # runs one-liner on nginx labeled pods within tst namespace in tmux
+    $ kubectl tks -n tst start -l app=nginx "_ exec {{pod}} -c nginx -- env"
+
+    # run prepared script env (scripts are within ~/.tks/sequences.json)
+    $ kubectl tks -n tst start -l app=nginx env
+
+    # run one-liner env on all pods; then echo pod name 
+    $ kubectl tks -n tst start -l app=nginx "_ exec {{pod}} -c nginx -- env ; echo {{pod}}"
+
+    # same as above but attaches tmux
+    $ kubectl tks -n tst start -l app=nginx "_ exec {{pod}} -c nginx -- env ; echo {{pod}};{{_A}}"
+
+    # uses prepared (sequences.json) podname->container name mapper, p2c
+    # p2c holds set of rules to resolve container name from pod name
+    $ kubectl tks -n tst start "_ exec {{pod}} -c {{p2c}} -- env"
+
+    # uses prepared EC shortcut (sequences.json) for ping execution
+    # EC - exec container expands to kubectl -n tst exec {{pod}} -c {{p2c}}
+    $ kubectl tks -n tst start "{{EC}} ping -c 4 127.0.0.1"
+  platforms:
+    - selector:
+        matchLabels:
+          os: darwin
+          arch: amd64
+      uri: https://github.com/comboshreddies/kubectl-tks/releases/download/v0.8.0/kubectl-tks.amd64_darwin.tgz
+      sha256: "77470f211f17e38528f48fef7c4c01e413ef63cc67f92777c7c1522ae7072612"
+      files:
+        - from: kubectl-tks
+          to: .
+        - from: sequences.json
+          to: . 
+      bin: kubectl-tks
+    - selector:
+        matchLabels:
+          os: linux
+          arch: amd64
+      uri: https://github.com/comboshreddies/kubectl-tks/releases/download/v0.8.0/kubectl-tks.amd64_linux.tgz
+      sha256: "24df6268b87ce8b262b6207d0a3cee440322c68cadd60164b8202c7a619ad16a"
+      files:
+        - from: kubectl-tks
+          to: .
+        - from: sequences.json
+          to: .
+      bin: kubectl-tks
+    - selector:
+        matchLabels:
+          os: darwin
+          arch: arm64
+      uri: https://github.com/comboshreddies/kubectl-tks/releases/download/v0.8.0/kubectl-tks.arm64_darwin.tgz
+      sha256: "2e822842eb64653a1434dba9cd2355f0ffc92d288578b86ca7c12c88092c9d9a"
+      files:
+        - from: kubectl-tks
+          to: .
+        - from: sequences.json
+          to: .
+      bin: kubectl-tks
+    - selector:
+        matchLabels:
+          os: linux
+          arch: arm64
+      uri: https://github.com/comboshreddies/kubectl-tks/releases/download/v0.8.0/kubectl-tks.arm64_linux.tgz
+      sha256: "d2359a7d04d9ce62c949a583937eead2b64b2fb78d6c50354a86c2a18cc0c798"
+      files:
+        - from: kubectl-tks
+          to: .
+        - from: sequences.json
+          to: .
+      bin: kubectl-tks
