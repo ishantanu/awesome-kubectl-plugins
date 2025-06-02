@@ -161,7 +161,7 @@ Now, `awesome-kubectl-plugins` is not just a list of awesome kubectl plugins (wi
 | 99  | [kubectl-datree](https://github.com/datreeio/kubectl-datree) | Scan resources within your cluster for misconfigurations | Misconfiguration Detection | [![GitHub stars](https://img.shields.io/github/stars/datreeio/kubectl-datree)](https://github.com/datreeio/kubectl-datree/stargazers) |
 | 100 | [kubectl-irsa](https://github.com/WoodProgrammer/kubectl-irsa) | Check the IAM capabilities of the serviceaccounts via AWS PolicySimulator | Security | [![GitHub stars](https://img.shields.io/github/stars/WoodProgrammer/kubectl-irsa)](https://github.com/WoodProgrammer/kubectl-irsa/stargazers) |
 | 101 | [kubectl-dumpy](https://github.com/larryTheSlap/dumpy) | Performs tcpdump captures on resources | Networking | [![GitHub stars](https://img.shields.io/github/stars/larryTheSlap/dumpy)](https://github.com/larryTheSlap/dumpy/stargazers) |
-| 102  | [kubectl-tks](https://github.com/comboshreddies/kubectl-tks)                          | Execute scripts on pods within tmux windows                                              | Exec                | [![GitHub stars](https://img.shields.io/github/comboshreddies/kubectl-tks)](https://github.com/comboshreddies/kubectl-tks/stargazers) |
+| 102  | [kubectl-tks](https://github.com/comboshreddies/kubectl-tks)                          | Execute scripts on pods within tmux windows                                              | Exec                | [![GitHub stars](https://img.shields.io/github/stars/comboshreddies/kubectl-tks)](https://github.com/comboshreddies/kubectl-tks/stargazers) |
  
 ### Collection of kubectl plugins
 

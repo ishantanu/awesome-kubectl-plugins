@@ -3,7 +3,7 @@ kind: Plugin
 metadata:
   name: tks
 spec:
-  version: "v0.8.0"
+  version: "v0.9.0"
   homepage: https://github.com/comboshreddies/kubectl-tks
   shortDescription: tmux kubernetes scripts
   description: |+2
@@ -33,8 +33,8 @@ spec:
         matchLabels:
           os: darwin
           arch: amd64
-      uri: https://github.com/comboshreddies/kubectl-tks/releases/download/v0.8.0/kubectl-tks.amd64_darwin.tgz
-      sha256: "77470f211f17e38528f48fef7c4c01e413ef63cc67f92777c7c1522ae7072612"
+      uri: https://github.com/comboshreddies/kubectl-tks/releases/download/v0.9.0/kubectl-tks.amd64_darwin.tgz
+      sha256: "f63c818884713dd04e6c08077b10fe697c2b68d018b5214b4093aa719dfac339"
       files:
         - from: kubectl-tks
           to: .
@@ -45,8 +45,8 @@ spec:
         matchLabels:
           os: linux
           arch: amd64
-      uri: https://github.com/comboshreddies/kubectl-tks/releases/download/v0.8.0/kubectl-tks.amd64_linux.tgz
-      sha256: "24df6268b87ce8b262b6207d0a3cee440322c68cadd60164b8202c7a619ad16a"
+      uri: https://github.com/comboshreddies/kubectl-tks/releases/download/v0.9.0/kubectl-tks.amd64_linux.tgz
+      sha256: "88388abcc48176ddb063cffa4b2ce89e859f1809aac1948e06febd6bac484df9"
       files:
         - from: kubectl-tks
           to: .
@@ -57,8 +57,8 @@ spec:
         matchLabels:
           os: darwin
           arch: arm64
-      uri: https://github.com/comboshreddies/kubectl-tks/releases/download/v0.8.0/kubectl-tks.arm64_darwin.tgz
-      sha256: "2e822842eb64653a1434dba9cd2355f0ffc92d288578b86ca7c12c88092c9d9a"
+      uri: https://github.com/comboshreddies/kubectl-tks/releases/download/v0.9.0/kubectl-tks.arm64_darwin.tgz
+      sha256: "d8f184e87adb27014b48d1d5327bd297300b2695caac88d9cb9ef7ce38f74f33"
       files:
         - from: kubectl-tks
           to: .
@@ -69,8 +69,8 @@ spec:
         matchLabels:
           os: linux
           arch: arm64
-      uri: https://github.com/comboshreddies/kubectl-tks/releases/download/v0.8.0/kubectl-tks.arm64_linux.tgz
-      sha256: "d2359a7d04d9ce62c949a583937eead2b64b2fb78d6c50354a86c2a18cc0c798"
+      uri: https://github.com/comboshreddies/kubectl-tks/releases/download/v0.9.0/kubectl-tks.arm64_linux.tgz
+      sha256: "158f938b0e73a1369e140570253fa2fe3c0697db560c358f01f560034cfd1938"
       files:
         - from: kubectl-tks
           to: .
