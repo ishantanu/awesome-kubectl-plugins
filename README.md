@@ -28,7 +28,7 @@ If you see a link that isn't a good fit, you can fix it by submitting a pull req
 * [Extending kubectl with plugins](https://kubernetes.io/docs/tasks/extend-kubectl/kubectl-plugins/)
 * [Write your own kubectl subcommands](https://ahmet.im/blog/kubectl-plugins/)
 * [Manage Kubernetes Plugins with Krew](https://thepracticalsysadmin.com/manage-kubernetes-plugins-with-krew/)
-* [Boosting Your Kubectl Productivity](https://learnk8s.io/blog/kubectl-productivity/)
+* [Boosting Your Kubectl Productivity](https://learnkube.com/blog/kubectl-productivity/)
 * [Top 15 Kubectl plugins for security engineers](https://sysdig.com/blog/top-15-kubectl-plugins-for-security-engineers/)
 
 ## Use `awesome-kubectl-plugins` as a Custom Index via Krew
