@@ -1,0 +1,54 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: fd
+spec:
+  version: v0.4.1
+  homepage: https://github.com/alikhil/kubectl-find
+  shortDescription: Find resources and perform action on them.
+  description: |
+    It's a plugin for kubectl that gives you a UNIX find-like experience.
+    Find then print, patch or delete any resource matching the provided criteria based on name, age, labels, etc
+  platforms:
+  - selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+    uri: https://github.com/alikhil/kubectl-find/releases/download/v0.4.1/kubectl-find_Linux_x86_64.tar.gz
+    sha256: f48e313429486f2c320b81530e79cf6a728f76be4a20e2eea0d5a47a1c48cfd5
+    bin: kubectl-find
+  - selector:
+      matchLabels:
+        os: linux
+        arch: arm64
+    uri: https://github.com/alikhil/kubectl-find/releases/download/v0.4.1/kubectl-find_Linux_arm64.tar.gz
+    sha256: 82a0b756dbe38932d3b2f89dfd72b8e205b3a779223a0f5563b91628ba5f4b00
+    bin: kubectl-find
+  - selector:
+      matchLabels:
+        os: darwin
+        arch: amd64
+    uri: https://github.com/alikhil/kubectl-find/releases/download/v0.4.1/kubectl-find_Darwin_x86_64.tar.gz
+    sha256: f364389a764d21b9d8dc005953ae9b3cb7f59e010548d9a79301e2d4b4ac49f3
+    bin: kubectl-find
+  - selector:
+      matchLabels:
+        os: darwin
+        arch: arm64
+    uri: https://github.com/alikhil/kubectl-find/releases/download/v0.4.1/kubectl-find_Darwin_arm64.tar.gz
+    sha256: 88e84829e0d246c69775b8004b97e198f3e8a9f4cba0bb93cc2598444704aa8a
+    bin: kubectl-find
+  - selector:
+      matchLabels:
+        os: windows
+        arch: amd64
+    uri: https://github.com/alikhil/kubectl-find/releases/download/v0.4.1/kubectl-find_Windows_x86_64.zip
+    sha256: 735cba8f2080a9753fad2c91c9625d47be42721b1d84e5a8b35a82efc0a1a349
+    bin: kubectl-find.exe
+  - selector:
+      matchLabels:
+        os: windows
+        arch: arm64
+    uri: https://github.com/alikhil/kubectl-find/releases/download/v0.4.1/kubectl-find_Windows_arm64.zip
+    sha256: a7c033881d348e3b51c9a58b7c31c4ad1d226bf8af4ce0f93e54f1edc9f5a2ac
+    bin: kubectl-find.exe

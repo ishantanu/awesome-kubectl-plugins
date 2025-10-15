@@ -162,6 +162,7 @@ Now, `awesome-kubectl-plugins` is not just a list of awesome kubectl plugins (wi
 | 100 | [kubectl-irsa](https://github.com/WoodProgrammer/kubectl-irsa) | Check the IAM capabilities of the serviceaccounts via AWS PolicySimulator | Security | [![GitHub stars](https://img.shields.io/github/stars/WoodProgrammer/kubectl-irsa)](https://github.com/WoodProgrammer/kubectl-irsa/stargazers) |
 | 101 | [kubectl-dumpy](https://github.com/larryTheSlap/dumpy) | Performs tcpdump captures on resources | Networking | [![GitHub stars](https://img.shields.io/github/stars/larryTheSlap/dumpy)](https://github.com/larryTheSlap/dumpy/stargazers) |
 | 102  | [kubectl-tks](https://github.com/comboshreddies/kubectl-tks)                          | Execute scripts on pods within tmux windows                                              | Exec                | [![GitHub stars](https://img.shields.io/github/stars/comboshreddies/kubectl-tks)](https://github.com/comboshreddies/kubectl-tks/stargazers) |
+| 103  | [kubectl find](https://github.com/alikhil/kubectl-find) | UNIX-find-like plugin for kubectl to find resources and perform action on them                                               | Uncategorized                | [![GitHub stars](https://img.shields.io/github/stars/alikhil/kubectl-find)](https://github.com/alikhil/kubectl-find/stargazers) |
  
 ### Collection of kubectl plugins
 
