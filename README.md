@@ -164,6 +164,7 @@ Now, `awesome-kubectl-plugins` is not just a list of awesome kubectl plugins (wi
 | 102  | [kubectl-tks](https://github.com/comboshreddies/kubectl-tks)                          | Execute scripts on pods within tmux windows                                              | Exec                | [![GitHub stars](https://img.shields.io/github/stars/comboshreddies/kubectl-tks)](https://github.com/comboshreddies/kubectl-tks/stargazers) |
 | 103  | [kubectl find](https://github.com/alikhil/kubectl-find) | UNIX-find-like plugin for kubectl to find resources and perform action on them                                               | Uncategorized                | [![GitHub stars](https://img.shields.io/github/stars/alikhil/kubectl-find)](https://github.com/alikhil/kubectl-find/stargazers) |
  | 104  | [kubectl-kanvas-snapshot](https://github.com/meshery-extensions/kubectl-kanvas-snapshot) | A kubectl plugin for rendering Kanvas Snapshots.                      | Uncategorized                | [![GitHub stars](https://img.shields.io/github/stars/meshery-extensions/kubectl-kanvas-snapshot)](https://github.com/meshery-extensions/kubectl-kanvas-snapshot/stargazers)
+| 105  | [kubectl-tmux-exec](https://github.com/predatorray/kubectl-tmux-exec) | An exec multiplexer using Tmux to run commands on multiple pods simultaneously | Exec | [![GitHub stars](https://img.shields.io/github/stars/predatorray/kubectl-tmux-exec)](https://github.com/predatorray/kubectl-tmux-exec/stargazers) |
  
 ### Collection of kubectl plugins
 
