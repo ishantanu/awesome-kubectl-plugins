@@ -163,8 +163,9 @@ Now, `awesome-kubectl-plugins` is not just a list of awesome kubectl plugins (wi
 | 101 | [kubectl-dumpy](https://github.com/larryTheSlap/dumpy) | Performs tcpdump captures on resources | Networking | [![GitHub stars](https://img.shields.io/github/stars/larryTheSlap/dumpy)](https://github.com/larryTheSlap/dumpy/stargazers) |
 | 102  | [kubectl-tks](https://github.com/comboshreddies/kubectl-tks)                          | Execute scripts on pods within tmux windows                                              | Exec                | [![GitHub stars](https://img.shields.io/github/stars/comboshreddies/kubectl-tks)](https://github.com/comboshreddies/kubectl-tks/stargazers) |
 | 103  | [kubectl find](https://github.com/alikhil/kubectl-find) | UNIX-find-like plugin for kubectl to find resources and perform action on them                                               | Uncategorized                | [![GitHub stars](https://img.shields.io/github/stars/alikhil/kubectl-find)](https://github.com/alikhil/kubectl-find/stargazers) |
- | 104  | [kubectl-kanvas-snapshot](https://github.com/meshery-extensions/kubectl-kanvas-snapshot) | A kubectl plugin for rendering Kanvas Snapshots.                      | Uncategorized                | [![GitHub stars](https://img.shields.io/github/stars/meshery-extensions/kubectl-kanvas-snapshot)](https://github.com/meshery-extensions/kubectl-kanvas-snapshot/stargazers)
- 
+| 104  | [kubectl-kanvas-snapshot](https://github.com/meshery-extensions/kubectl-kanvas-snapshot) | A kubectl plugin for rendering Kanvas Snapshots.                      | Uncategorized                | [![GitHub stars](https://img.shields.io/github/stars/meshery-extensions/kubectl-kanvas-snapshot)](https://github.com/meshery-extensions/kubectl-kanvas-snapshot/stargazers) |
+| 105  | [kubectl-tripwire](https://github.com/Dasmat13/kubectl-tripwire) | Admission webhook failure-chain and runtime dependency analyzer for Kubernetes. | Failure Analysis             | [![GitHub stars](https://img.shields.io/github/stars/Dasmat13/kubectl-tripwire)](https://github.com/Dasmat13/kubectl-tripwire/stargazers) |
+
 ### Collection of kubectl plugins
 
 * [collection of kubectl plugins](https://github.com/jordanwilson230/kubectl-plugins) - A Collection of Plugins for kubectl Integration (context switching, ssh / exec as any user, etc).
