@@ -1,0 +1,33 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: line
+spec:
+  version: "v0.9.0"
+  homepage: https://github.com/comboshreddies/kubectl-line
+  shortDescription: ability to pipeline to or from kubectl 
+  description: |+2
+    # delete pods with label app=some
+    kubectl line -n some get pod -l app=some | kubectl line delete pod {{name}}
+
+    # executing env command on selected pod
+    kubectl line -n monitoring get pod -l app=prom | kubectl line exec -- env 
+
+    # executing get command on all resources in default cluster
+    kubectl line api-resources | kubectl line get {{kind}} -A
+
+    # from all clusters in kubeconfig get pods in namespace prod with label app=web
+    kubectl line config get-contexts | kubectl line -n prod get pod -l app=web 
+ 
+  platforms:
+    - selector:
+      uri: https://github.com/comboshreddies/kubectl-line/releases/download/v0.9.0/kubectl-line.tgz
+      sha256: "b8b126a8092ea36411ac42f018cef530bfff5e417c0fa64690295255e7a2ee9a"
+      files:
+        - from: kubectl-line
+          to: .
+        - from: kubectl-line
+          to: line
+        - from: kubectl-line
+          to: _
+      bin: kubectl-line

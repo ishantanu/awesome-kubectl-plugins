@@ -165,7 +165,8 @@ Now, `awesome-kubectl-plugins` is not just a list of awesome kubectl plugins (wi
 | 103  | [kubectl find](https://github.com/alikhil/kubectl-find) | UNIX-find-like plugin for kubectl to find resources and perform action on them                                               | Uncategorized                | [![GitHub stars](https://img.shields.io/github/stars/alikhil/kubectl-find)](https://github.com/alikhil/kubectl-find/stargazers) |
  | 104  | [kubectl-kanvas-snapshot](https://github.com/meshery-extensions/kubectl-kanvas-snapshot) | A kubectl plugin for rendering Kanvas Snapshots.                      | Uncategorized                | [![GitHub stars](https://img.shields.io/github/stars/meshery-extensions/kubectl-kanvas-snapshot)](https://github.com/meshery-extensions/kubectl-kanvas-snapshot/stargazers)
 | 105  | [kubectl-tmux-exec](https://github.com/predatorray/kubectl-tmux-exec) | An exec multiplexer using Tmux to run commands on multiple pods simultaneously | Exec | [![GitHub stars](https://img.shields.io/github/stars/predatorray/kubectl-tmux-exec)](https://github.com/predatorray/kubectl-tmux-exec/stargazers) |
- 
+| 106  | [kubectl-line](https://github.com/comboshreddies/kubectl-line) | plugin to pass to or from kubectl via shell pipeline  | Uncategorized                | [![GitHub stars](https://img.shields.io/github/stars/comboshreddies/kubectl-line)](https://github.com/comboshreddies/kubectl-line/stargazers)
+
 ### Collection of kubectl plugins
 
 * [collection of kubectl plugins](https://github.com/jordanwilson230/kubectl-plugins) - A Collection of Plugins for kubectl Integration (context switching, ssh / exec as any user, etc).
