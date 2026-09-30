@@ -166,6 +166,7 @@ Now, `awesome-kubectl-plugins` is not just a list of awesome kubectl plugins (wi
  | 104  | [kubectl-kanvas-snapshot](https://github.com/meshery-extensions/kubectl-kanvas-snapshot) | A kubectl plugin for rendering Kanvas Snapshots.                      | Uncategorized                | [![GitHub stars](https://img.shields.io/github/stars/meshery-extensions/kubectl-kanvas-snapshot)](https://github.com/meshery-extensions/kubectl-kanvas-snapshot/stargazers)
 | 105  | [kubectl-tmux-exec](https://github.com/predatorray/kubectl-tmux-exec) | An exec multiplexer using Tmux to run commands on multiple pods simultaneously | Exec | [![GitHub stars](https://img.shields.io/github/stars/predatorray/kubectl-tmux-exec)](https://github.com/predatorray/kubectl-tmux-exec/stargazers) |
 | 106  | [kubectl-line](https://github.com/comboshreddies/kubectl-line) | plugin to pass to or from kubectl via shell pipeline  | Uncategorized                | [![GitHub stars](https://img.shields.io/github/stars/comboshreddies/kubectl-line)](https://github.com/comboshreddies/kubectl-line/stargazers)
+| 107  | [cnpg-drill](https://github.com/danielgaskins/cnpg-drill) | Verify CloudNativePG Barman backups by restoring them into disposable clusters and running read-only SQL checks | Backup and Recovery | [![GitHub stars](https://img.shields.io/github/stars/danielgaskins/cnpg-drill)](https://github.com/danielgaskins/cnpg-drill/stargazers) |
 
 ### Collection of kubectl plugins
 

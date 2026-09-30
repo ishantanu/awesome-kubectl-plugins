@@ -1,0 +1,26 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: cnpg-drill
+spec:
+  version: v0.1.0
+  homepage: https://github.com/danielgaskins/cnpg-drill
+  shortDescription: Prove CloudNativePG backup recovery
+  description: |
+    Restores a CloudNativePG Barman backup into a disposable cluster,
+    runs read-only checks, and reports whether recovery succeeded.
+  caveats: |
+    Requires Python 3.10+, kubectl, CloudNativePG, and the Barman Cloud plugin.
+    Review the recovery plan and RBAC before running against production.
+  platforms:
+  - selector:
+      matchExpressions:
+      - {key: os, operator: In, values: [darwin, linux]}
+    uri: https://github.com/danielgaskins/cnpg-drill/releases/download/v0.1.0/cnpg-drill_0.1.0_unix.tar.gz
+    sha256: 55cd912b6eeebf6e7fb7d197beb2a38ccbc2851d31211f2ac55ab9bd94e088d2
+    files:
+    - from: kubectl-cnpg_drill
+      to: .
+    - from: LICENSE
+      to: .
+    bin: kubectl-cnpg_drill
