@@ -1,0 +1,88 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: datadiff
+spec:
+  version: v0.6.0
+  homepage: https://github.com/dimanovikov/datadiff
+  shortDescription: Show kubectl diff as changed fields, not lines
+  description: |
+    Runs kubectl diff with datadiff as the diff program. Instead of a line
+    diff of YAML it prints each field that changed, such as
+    spec.replicas: 3 → 5. Key order and formatting are ignored, and with
+    --key name list items such as containers and env vars are matched by
+    name, so reordering them is not a change.
+
+    datadiff options such as --key, --ignore and --fail-on go to datadiff,
+    and every other argument goes to kubectl diff unchanged.
+  platforms:
+  - selector:
+      matchLabels:
+        os: darwin
+        arch: arm64
+    uri: https://github.com/dimanovikov/datadiff/releases/download/v0.6.0/datadiff-v0.6.0-aarch64-apple-darwin.tar.gz
+    sha256: 4e12066e92609c4ce32479d798f19772bca8fdc40e4c547506834f95a4422e5f
+    bin: datadiff
+    files:
+    - from: datadiff
+      to: .
+    - from: LICENSE-MIT
+      to: LICENSE
+    - from: LICENSE-APACHE
+      to: .
+  - selector:
+      matchLabels:
+        os: darwin
+        arch: amd64
+    uri: https://github.com/dimanovikov/datadiff/releases/download/v0.6.0/datadiff-v0.6.0-x86_64-apple-darwin.tar.gz
+    sha256: dd2477b1f4aec6c11338cc55bb83b475634351816c58acb11b99de5514bd12ca
+    bin: datadiff
+    files:
+    - from: datadiff
+      to: .
+    - from: LICENSE-MIT
+      to: LICENSE
+    - from: LICENSE-APACHE
+      to: .
+  - selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+    uri: https://github.com/dimanovikov/datadiff/releases/download/v0.6.0/datadiff-v0.6.0-x86_64-unknown-linux-gnu.tar.gz
+    sha256: 2949db89a8449b9ec1808e2cec3e0e5f273d7a2c19730259516abc0cd3d8aab7
+    bin: datadiff
+    files:
+    - from: datadiff
+      to: .
+    - from: LICENSE-MIT
+      to: LICENSE
+    - from: LICENSE-APACHE
+      to: .
+  - selector:
+      matchLabels:
+        os: linux
+        arch: arm64
+    uri: https://github.com/dimanovikov/datadiff/releases/download/v0.6.0/datadiff-v0.6.0-aarch64-unknown-linux-gnu.tar.gz
+    sha256: 270a053074fd1214e15289cda14acbfee7f22e1eb7166e3d9baf5fcf559d6a7c
+    bin: datadiff
+    files:
+    - from: datadiff
+      to: .
+    - from: LICENSE-MIT
+      to: LICENSE
+    - from: LICENSE-APACHE
+      to: .
+  - selector:
+      matchLabels:
+        os: windows
+        arch: amd64
+    uri: https://github.com/dimanovikov/datadiff/releases/download/v0.6.0/datadiff-v0.6.0-x86_64-pc-windows-msvc.zip
+    sha256: 16143d8c6b663d970aa2affebd3581653bc45fda17f0bf89d4ace660521da286
+    bin: datadiff.exe
+    files:
+    - from: datadiff.exe
+      to: .
+    - from: LICENSE-MIT
+      to: LICENSE
+    - from: LICENSE-APACHE
+      to: .
