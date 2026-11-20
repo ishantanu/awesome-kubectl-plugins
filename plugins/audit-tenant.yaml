@@ -1,0 +1,53 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: audit-tenant
+spec:
+  version: v0.1.2
+  platforms:
+    - bin: kubectl-audit_tenant.exe
+      uri: https://github.com/BodhiSatvik/kubectl-audit-tenant/releases/download/v0.1.2/kubectl-audit-tenant_0.1.2_windows_amd64.zip
+      sha256: 2e0ccd16a9a450411dae9570014a79da78db93b2d4dae7a8ff85d51d9e308e27
+      selector:
+        matchLabels:
+          os: windows
+          arch: amd64
+    - bin: kubectl-audit_tenant
+      uri: https://github.com/BodhiSatvik/kubectl-audit-tenant/releases/download/v0.1.2/kubectl-audit-tenant_0.1.2_linux_arm64.tar.gz
+      sha256: 04b41d701bd265923bff38aa1c1cae2fd70527d7cffbf26620b23583d0dce720
+      selector:
+        matchLabels:
+          os: linux
+          arch: arm64
+    - bin: kubectl-audit_tenant
+      uri: https://github.com/BodhiSatvik/kubectl-audit-tenant/releases/download/v0.1.2/kubectl-audit-tenant_0.1.2_linux_amd64.tar.gz
+      sha256: c8125337cfd9611277a5667652ce6c25e27cfce64742815f9f28a58a56475dcf
+      selector:
+        matchLabels:
+          os: linux
+          arch: amd64
+    - bin: kubectl-audit_tenant
+      uri: https://github.com/BodhiSatvik/kubectl-audit-tenant/releases/download/v0.1.2/kubectl-audit-tenant_0.1.2_darwin_arm64.tar.gz
+      sha256: 9d10c6eef25a453012500d3c3e919cccbf40c1afa667cb8d2e204066fff395b9
+      selector:
+        matchLabels:
+          os: darwin
+          arch: arm64
+    - bin: kubectl-audit_tenant
+      uri: https://github.com/BodhiSatvik/kubectl-audit-tenant/releases/download/v0.1.2/kubectl-audit-tenant_0.1.2_darwin_amd64.tar.gz
+      sha256: 4ff19fa09f97156a79f24f5d6c3d3fca333cc53af9101b16e2fd82bb726da276
+      selector:
+        matchLabels:
+          os: darwin
+          arch: amd64
+  shortDescription: Check as the tenant whether a namespace is fenced
+  homepage: https://github.com/BodhiSatvik/kubectl-audit-tenant
+  caveats: |
+    Checking an identity other than your own needs RBAC rights to impersonate it.
+    Supported clusters: Kubernetes 1.28 or newer.
+  description: |
+    audit-tenant runs ten tenant-governance checks as the tenant identity against one
+    namespace and prints a verdict for each of its fourteen results (PASS, FAIL, SKIP or
+    ERROR) with the reason and a hint. It never changes the cluster: it asks "may I?"
+    (SelfSubjectAccessReview) and rehearses creates with server-side dry runs, so Pod
+    Security Admission, admission webhooks and ValidatingAdmissionPolicy answer them.
