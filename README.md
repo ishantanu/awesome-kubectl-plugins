@@ -172,6 +172,8 @@ Now, `awesome-kubectl-plugins` is not just a list of awesome kubectl plugins (wi
 | 110  | [kubectl audit-tenant](https://github.com/BodhiSatvik/kubectl-audit-tenant) | Check, as the tenant, whether a namespace is fenced: ten checks of RBAC, Pod Security, admission, quotas and NetworkPolicies, asked of the live cluster with SelfSubjectAccessReviews and server-side dry runs; never writes to the cluster | Security | [![GitHub stars](https://img.shields.io/github/stars/BodhiSatvik/kubectl-audit-tenant)](https://github.com/BodhiSatvik/kubectl-audit-tenant/stargazers) |
 | 111  | [kubectl upgrade-check](https://github.com/runtimez-com/kube-upgrade-check) | Read-only check of a live cluster against a target Kubernetes version: removed APIs, control-plane and kubelet settings the target rejects, in-tree volume plugins, node version skew and add-on compatibility | Misconfiguration Detection | [![GitHub stars](https://img.shields.io/github/stars/runtimez-com/kube-upgrade-check)](https://github.com/runtimez-com/kube-upgrade-check/stargazers) |
 
+* [kubebox](https://github.com/astefanutti/kubebox) - Terminal and Web console for Kubernetes
+
 ### Collection of kubectl plugins
 
 * [collection of kubectl plugins](https://github.com/jordanwilson230/kubectl-plugins) - A Collection of Plugins for kubectl Integration (context switching, ssh / exec as any user, etc).
